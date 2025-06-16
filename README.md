@@ -32,8 +32,14 @@ License
 🧭 Clean UI – Interactive and intuitive web interface.
 
 🧰 Tech Stack
+<br>
 Area	Technologies
+<br>
+<br>
 Frontend	HTML, CSS, JavaScript
+<br>
 Backend	Node.js
+<br>
 Database	MongoDB
+<br>
 Chatbot	Custom trained logic-based bot
