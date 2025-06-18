@@ -1,0 +1,6056 @@
+{
+  "intents": [
+    {
+      "tag": "anxiety-social",
+      "patterns": [
+        "I feel nervous around people",
+        "I get anxious in social situations",
+        "Talking to strangers makes me uneasy",
+        "I worry about what people think of me"
+      ],
+      "responses": [
+        "Social anxiety can be tough. Would you like to talk about a recent experience?",
+        "You're not alone in feeling this way. What usually triggers your social anxiety?"
+      ],
+      "tips": [
+        "Practice deep breathing before social interactions.",
+        "Prepare small topics in advance for conversation.",
+        "Challenge negative thoughts about how others see you.",
+        "Start with smaller, more comfortable social settings."
+      ]
+    },
+    {
+      "tag": "depression-lack-of-interest",
+      "patterns": [
+        "I don't enjoy anything anymore",
+        "Nothing excites me these days",
+        "I feel numb all the time",
+        "I've lost interest in my hobbies"
+      ],
+      "responses": [
+        "Losing interest can be a sign of emotional exhaustion. I'm here to listen.",
+        "It’s okay to feel this way. Can you remember when you last felt excited about something?"
+      ],
+      "tips": [
+        "Try a small version of an activity you used to enjoy.",
+        "Keep a mood journal to identify patterns.",
+        "Set very small daily goals, even if it's just taking a shower.",
+        "Talk to someone you trust about how you’re feeling."
+      ]
+    },
+    {
+      "tag": "fear-failure",
+      "patterns": [
+        "I'm afraid of failing",
+        "What if I mess everything up?",
+        "I don't think I can succeed",
+        "Failure terrifies me"
+      ],
+      "responses": [
+        "Fear of failure is natural, but it doesn't define your worth. Want to talk about what's worrying you?",
+        "Everyone fails sometimes. What matters is how we learn from it."
+      ],
+      "tips": [
+        "Reframe failure as a chance to learn something new.",
+        "Write down past challenges you've overcome.",
+        "Visualize success in small steps.",
+        "Talk to someone who’s been through similar situations."
+      ]
+    },
+    {
+      "tag": "overthinking",
+      "patterns": [
+        "I can't stop thinking about everything",
+        "My mind won't quiet down",
+        "I keep replaying situations in my head",
+        "I overanalyze everything"
+      ],
+      "responses": [
+        "Overthinking can be exhausting. Would it help to unpack one specific worry?",
+        "Sometimes putting thoughts into words helps. Want to talk it through?"
+      ],
+      "tips": [
+        "Write your thoughts down to clear your mind.",
+        "Set a 'worry timer' – only allow yourself 10 minutes to worry.",
+        "Practice mindfulness to bring yourself back to the present.",
+        "Use grounding techniques like the 5-4-3-2-1 method."
+      ]
+    },
+    {
+      "tag": "low-self-esteem",
+      "patterns": [
+        "I don't feel good enough",
+        "I hate myself",
+        "I'm not confident in anything",
+        "I always compare myself to others"
+      ],
+      "responses": [
+        "Self-esteem struggles are common. Would you like to talk about what’s been making you feel this way?",
+        "You matter just as you are. Let’s explore some of these thoughts together."
+      ],
+      "tips": [
+        "Practice self-affirmations daily.",
+        "Avoid comparing your progress to others’ highlights.",
+        "Write down 3 things you did well each day.",
+        "Surround yourself with supportive people."
+      ]
+    },
+    {
+      "tag": "grief-loss",
+      "patterns": [
+        "I miss someone who’s gone",
+        "It’s hard to move on",
+        "I feel empty since the loss",
+        "I can’t stop thinking about them"
+      ],
+      "responses": [
+        "Grief can feel overwhelming. Would you like to talk about your memories?",
+        "It’s okay to feel this way. Would sharing stories help you process your feelings?"
+      ],
+      "tips": [
+        "Allow yourself to feel your emotions without judgment.",
+        "Create a memory box or journal.",
+        "Talk to someone who understands your loss.",
+        "Consider joining a support group."
+      ]
+    },
+    {
+      "tag": "stress-work",
+      "patterns": [
+        "Work is overwhelming me",
+        "I’m stressed about deadlines",
+        "My job is too demanding",
+        "I can’t handle my workload"
+      ],
+      "responses": [
+        "Work stress is very common. Would you like to talk about what’s been difficult lately?",
+        "Let’s unpack what’s making you feel overwhelmed at work."
+      ],
+      "tips": [
+        "Take regular short breaks during the day.",
+        "Prioritize tasks and break them into smaller steps.",
+        "Set boundaries with your time and workload.",
+        "Talk to your manager or HR if things feel unmanageable."
+      ]
+    },
+    {
+      "tag": "loneliness",
+      "patterns": [
+        "I feel lonely all the time",
+        "I have no one to talk to",
+        "I wish I had more friends",
+        "I feel left out"
+      ],
+      "responses": [
+        "Loneliness can be very painful. Would you like to talk about your feelings?",
+        "You’re not alone in feeling this way. What would help you feel more connected?"
+      ],
+      "tips": [
+        "Try reaching out to someone you haven’t spoken to in a while.",
+        "Join a club or group that interests you.",
+        "Volunteer for a cause you care about.",
+        "Consider talking to a counselor."
+      ]
+    },
+    {
+      "tag": "anger-irritation",
+      "patterns": [
+        "I get angry easily",
+        "Little things annoy me",
+        "I feel frustrated all the time",
+        "I snap at people"
+      ],
+      "responses": [
+        "Anger can be hard to manage. Would you like to talk about what’s been triggering you?",
+        "It’s okay to feel angry sometimes. Let’s explore ways to cope."
+      ],
+      "tips": [
+        "Practice deep breathing when you feel upset.",
+        "Take a short walk to cool down.",
+        "Write down what made you angry and why.",
+        "Consider talking to a therapist if anger feels out of control."
+      ]
+    },
+    {
+      "tag": "hope",
+      "patterns": [
+        "I feel hopeful about the future",
+        "I believe things will get better",
+        "I see a light at the end of the tunnel",
+        "I feel optimistic"
+      ],
+      "responses": [
+        "Hope is a powerful feeling. What’s giving you hope right now?",
+        "It’s wonderful to feel optimistic. Would you like to share what’s changed?"
+      ],
+      "tips": [
+        "Write down what you’re hopeful about.",
+        "Share your hopes with someone you trust.",
+        "Set small, achievable goals to keep your optimism alive.",
+        "Celebrate your progress, no matter how small."
+      ]
+    },
+    {
+      "tag": "shame",
+      "patterns": [
+        "I feel ashamed of myself",
+        "I’m embarrassed by my actions",
+        "I can’t forgive myself",
+        "I wish I could disappear"
+      ],
+      "responses": [
+        "Shame can be very heavy. Would you like to talk about what’s making you feel this way?",
+        "You’re not alone. Let’s talk through these feelings together."
+      ],
+      "tips": [
+        "Practice self-compassion and remind yourself that everyone makes mistakes.",
+        "Write a letter to yourself with kindness and understanding.",
+        "Talk to someone you trust about your feelings.",
+        "Consider therapy to process deep shame."
+      ]
+    },
+    {
+      "tag": "guilt",
+      "patterns": [
+        "I feel guilty about something",
+        "I regret what I did",
+        "I can’t stop thinking about my mistake",
+        "I wish I could undo my actions"
+      ],
+      "responses": [
+        "Guilt is a tough emotion. Would you like to talk about what happened?",
+        "It’s okay to feel guilty. Let’s explore how to move forward."
+      ],
+      "tips": [
+        "Reflect on what you learned from the situation.",
+        "Apologize if you feel it’s appropriate.",
+        "Let go of what you can’t change and focus on growth.",
+        "Practice self-forgiveness."
+      ]
+    },
+    {
+      "tag": "jealousy",
+      "patterns": [
+        "I feel jealous of others",
+        "I wish I had what they have",
+        "I get upset when others succeed",
+        "I compare myself to others"
+      ],
+      "responses": [
+        "Jealousy is a common feeling. Would you like to talk about what’s triggering you?",
+        "It’s okay to feel this way. Let’s explore your feelings together."
+      ],
+      "tips": [
+        "Focus on your own strengths and achievements.",
+        "Limit social media if it makes you feel worse.",
+        "Practice gratitude for what you have.",
+        "Talk to someone you trust about your feelings."
+      ]
+    },
+    {
+      "tag": "excitement",
+      "patterns": [
+        "I’m excited about something",
+        "I feel really happy today",
+        "I can’t wait for what’s coming",
+        "I’m looking forward to something"
+      ],
+      "responses": [
+        "Excitement is contagious! What’s making you feel this way?",
+        "It’s great to feel excited. Would you like to share more?"
+      ],
+      "tips": [
+        "Share your excitement with someone you care about.",
+        "Write down what you’re looking forward to.",
+        "Enjoy the moment and savor your happiness.",
+        "Plan something small to celebrate."
+      ]
+    },
+    {
+      "tag": "boredom",
+      "patterns": [
+        "I’m bored all the time",
+        "I have nothing to do",
+        "I feel restless",
+        "I can’t find anything interesting"
+      ],
+      "responses": [
+        "Boredom can be tough. Would you like some ideas for things to do?",
+        "Sometimes boredom is a sign you need something new. What interests you?"
+      ],
+      "tips": [
+        "Try a new hobby or activity.",
+        "Take a walk outside to refresh your mind.",
+        "Reach out to a friend for a chat.",
+        "Explore online courses or creative projects."
+      ]
+    },
+    {
+      "tag": "overwhelm",
+      "patterns": [
+        "I feel overwhelmed by everything",
+        "It’s all too much",
+        "I can’t handle my responsibilities",
+        "I feel like I’m drowning"
+      ],
+      "responses": [
+        "Feeling overwhelmed is understandable. Would you like to talk about what’s on your plate?",
+        "Let’s break things down together. What’s the most pressing right now?"
+      ],
+      "tips": [
+        "Make a list of everything you need to do, then prioritize.",
+        "Take things one step at a time.",
+        "Delegate tasks if possible.",
+        "Practice self-care and take breaks."
+      ]
+    },
+    {
+      "tag": "anxiety-health",
+      "patterns": [
+        "I’m worried about my health",
+        "I’m scared I might be sick",
+        "I can’t stop thinking about illness",
+        "I obsess over my symptoms"
+      ],
+      "responses": [
+        "Health anxiety is common. Would you like to talk about your concerns?",
+        "It’s okay to worry about your health. Let’s talk through your feelings."
+      ],
+      "tips": [
+        "Limit checking symptoms online.",
+        "Talk to a healthcare professional if you’re worried.",
+        "Practice relaxation techniques to calm your mind.",
+        "Focus on healthy habits like sleep and exercise."
+      ]
+    },
+    {
+      "tag": "anxiety-future",
+      "patterns": [
+        "I’m worried about my future",
+        "I don’t know what will happen",
+        "The future scares me",
+        "I’m anxious about what’s coming"
+      ],
+      "responses": [
+        "It’s normal to feel anxious about the future. Would you like to talk about your worries?",
+        "The unknown can be scary. Let’s talk through your concerns."
+      ],
+      "tips": [
+        "Focus on what you can control right now.",
+        "Set small, achievable goals for the future.",
+        "Talk to someone you trust about your worries.",
+        "Practice mindfulness to stay present."
+      ]
+    },
+    {
+      "tag": "anxiety-performance",
+      "patterns": [
+        "I’m nervous about performing",
+        "I get anxious before presentations",
+        "I worry I’ll mess up",
+        "I feel pressure to do well"
+      ],
+      "responses": [
+        "Performance anxiety is very common. Would you like to talk about a specific situation?",
+        "It’s okay to feel nervous. Let’s explore ways to cope."
+      ],
+      "tips": [
+        "Practice your presentation or performance ahead of time.",
+        "Visualize yourself succeeding.",
+        "Take deep breaths before starting.",
+        "Remind yourself that everyone gets nervous."
+      ]
+    },
+    {
+      "tag": "anxiety-change",
+      "patterns": [
+        "I’m scared of change",
+        "I don’t like things being different",
+        "I get anxious when things change",
+        "I prefer my routine"
+      ],
+      "responses": [
+        "Change can be unsettling. Would you like to talk about what’s changing in your life?",
+        "It’s okay to feel anxious about change. Let’s talk through your feelings."
+      ],
+      "tips": [
+        "Focus on what you can control in the new situation.",
+        "Take things one step at a time.",
+        "Keep some routines consistent to feel grounded.",
+        "Talk to someone you trust about your feelings."
+      ]
+    },
+    {
+      "tag": "anxiety-social-media",
+      "patterns": [
+        "Social media makes me anxious",
+        "I compare myself to others online",
+        "I feel bad after scrolling",
+        "I worry about what I post"
+      ],
+      "responses": [
+        "Social media can be tough on mental health. Would you like to talk about your experience?",
+        "It’s common to feel this way. Let’s talk through your feelings."
+      ],
+      "tips": [
+        "Limit your time on social media.",
+        "Unfollow accounts that make you feel bad.",
+        "Remember that people only share highlights online.",
+        "Take breaks from your devices."
+      ]
+    },
+    {
+      "tag": "anxiety-new-people",
+      "patterns": [
+        "I get nervous meeting new people",
+        "I’m anxious about first impressions",
+        "I worry about making friends",
+        "I feel awkward in new groups"
+      ],
+      "responses": [
+        "Meeting new people can be stressful. Would you like to talk about your worries?",
+        "It’s okay to feel anxious. Let’s talk through ways to cope."
+      ],
+      "tips": [
+        "Prepare a few conversation topics in advance.",
+        "Remind yourself that most people feel nervous in new situations.",
+        "Start with small, low-pressure social events.",
+        "Practice deep breathing before meeting new people."
+      ]
+    },
+    {
+      "tag": "depression-isolation",
+      "patterns": [
+        "I isolate myself from others",
+        "I don’t want to see anyone",
+        "I feel alone even with people around",
+        "I push people away"
+      ],
+      "responses": [
+        "Isolation can make depression feel worse. Would you like to talk about your feelings?",
+        "It’s okay to feel this way. Let’s talk through what’s happening."
+      ],
+      "tips": [
+        "Try to reach out to one person you trust.",
+        "Join an online support group if in-person feels hard.",
+        "Set small social goals, like sending a message.",
+        "Consider talking to a therapist."
+      ]
+    },
+    {
+      "tag": "depression-sleep",
+      "patterns": [
+        "I can’t sleep at night",
+        "I sleep too much",
+        "My sleep is all over the place",
+        "I feel tired all the time"
+      ],
+      "responses": [
+        "Sleep problems are common with depression. Would you like to talk about your sleep?",
+        "Let’s talk about your sleep habits and how you’re feeling."
+      ],
+      "tips": [
+        "Try to keep a regular sleep schedule.",
+        "Avoid screens before bed.",
+        "Practice relaxation techniques at night.",
+        "Talk to a doctor if sleep problems persist."
+      ]
+    },
+    {
+      "tag": "depression-appetite",
+      "patterns": [
+        "I don’t feel like eating",
+        "I eat too much when I’m sad",
+        "My appetite has changed",
+        "I’ve lost interest in food"
+      ],
+      "responses": [
+        "Changes in appetite can happen with depression. Would you like to talk about your eating habits?",
+        "Let’s talk about how you’re feeling and how it’s affecting your appetite."
+      ],
+      "tips": [
+        "Try to eat small, regular meals.",
+        "Choose foods you enjoy and that make you feel good.",
+        "Talk to a doctor if you’re worried about your eating.",
+        "Practice self-compassion if you struggle with food."
+      ]
+    },
+    {
+      "tag": "depression-motivation",
+      "patterns": [
+        "I can’t get out of bed",
+        "I have no energy",
+        "Everything feels like a chore",
+        "I don’t want to do anything"
+      ],
+      "responses": [
+        "Lack of motivation is common with depression. Would you like to talk about your experience?",
+        "It’s okay to feel this way. Let’s talk through what’s happening."
+      ],
+      "tips": [
+        "Set very small, achievable goals for the day.",
+        "Celebrate even the smallest accomplishments.",
+        "Ask for help if you need it.",
+        "Consider talking to a therapist."
+      ]
+    },
+    {
+      "tag": "depression-hope",
+      "patterns": [
+        "I don’t see a way out",
+        "I feel trapped",
+        "I don’t believe things will get better",
+        "I’ve lost hope"
+      ],
+      "responses": [
+        "Losing hope is very painful. Would you like to talk about your feelings?",
+        "It’s okay to feel this way. Let’s talk through what you’re experiencing."
+      ],
+      "tips": [
+        "Reach out to someone you trust.",
+        "Consider talking to a mental health professional.",
+        "Try to focus on small, positive moments.",
+        "Remember that feelings can change, even if it doesn’t feel like it now."
+      ]
+    },
+    {
+      "tag": "depression-self-worth",
+      "patterns": [
+        "I feel worthless",
+        "I don’t deserve happiness",
+        "I hate myself",
+        "I’m a burden to others"
+      ],
+      "responses": [
+        "Feeling worthless is a common part of depression. Would you like to talk about your feelings?",
+        "You matter, and your feelings are valid. Let’s talk through them together."
+      ],
+      "tips": [
+        "Practice self-compassion and remind yourself that you are not alone.",
+        "Write down things you like about yourself, even if it’s hard.",
+        "Talk to someone you trust about how you’re feeling.",
+        "Consider therapy to work through these feelings."
+      ]
+    },
+    {
+      "tag": "fear-rejection",
+      "patterns": [
+        "I’m afraid of being rejected",
+        "I worry people won’t like me",
+        "I fear being judged",
+        "I avoid situations where I might be rejected"
+      ],
+      "responses": [
+        "Fear of rejection is very common. Would you like to talk about your worries?",
+        "It’s okay to feel this way. Let’s talk through your feelings."
+      ],
+      "tips": [
+        "Challenge negative thoughts about rejection.",
+        "Practice small social risks in safe environments.",
+        "Remind yourself that everyone experiences rejection sometimes.",
+        "Build self-confidence through small achievements."
+      ]
+    },
+    {
+      "tag": "fear-unknown",
+      "patterns": [
+        "I’m scared of the unknown",
+        "I don’t like uncertainty",
+        "I worry about what might happen",
+        "I feel anxious when I don’t know what’s next"
+      ],
+      "responses": [
+        "Uncertainty can be unsettling. Would you like to talk about your worries?",
+        "It’s okay to feel anxious about the unknown. Let’s talk through your feelings."
+      ],
+      "tips": [
+        "Focus on what you can control right now.",
+        "Practice mindfulness to stay present.",
+        "Write down your worries and challenge them.",
+        "Talk to someone you trust about your feelings."
+      ]
+    },
+    {
+      "tag": "fear-abandonment",
+      "patterns": [
+        "I’m afraid of being left alone",
+        "I worry people will leave me",
+        "I fear losing my loved ones",
+        "I feel insecure in my relationships"
+      ],
+      "responses": [
+        "Fear of abandonment is a common feeling. Would you like to talk about your worries?",
+        "It’s okay to feel this way. Let’s talk through your feelings."
+      ],
+      "tips": [
+        "Challenge thoughts that assume the worst will happen.",
+        "Communicate your feelings with trusted people.",
+        "Build self-confidence and independence.",
+        "Consider therapy to work through these fears."
+      ]
+    },
+    {
+      "tag": "fear-public-speaking",
+      "patterns": [
+        "I’m terrified of public speaking",
+        "I get nervous giving presentations",
+        "I avoid speaking in front of groups",
+        "I worry I’ll embarrass myself"
+      ],
+      "responses": [
+        "Public speaking anxiety is very common. Would you like to talk about your experience?",
+        "It’s okay to feel nervous. Let’s talk through ways to cope."
+      ],
+      "tips": [
+        "Practice your speech or presentation ahead of time.",
+        "Visualize yourself succeeding.",
+        "Take deep breaths before speaking.",
+        "Remember that most people feel nervous, even if they don’t show it."
+      ]
+    },
+    {
+      "tag": "fear-flying",
+      "patterns": [
+        "I’m scared of flying",
+        "I get anxious on planes",
+        "I avoid traveling by air",
+        "I worry about plane crashes"
+      ],
+      "responses": [
+        "Fear of flying is understandable. Would you like to talk about your worries?",
+        "It’s okay to feel anxious. Let’s talk through your feelings."
+      ],
+      "tips": [
+        "Learn about how planes work to reduce fear of the unknown.",
+        "Practice relaxation techniques before and during the flight.",
+        "Distract yourself with music, books, or movies.",
+        "Talk to a therapist if your fear is severe."
+      ]
+    },
+    {
+      "tag": "overwork-burnout",
+      "patterns": [
+        "I feel burned out",
+        "I’m exhausted from work",
+        "I can’t keep up with my responsibilities",
+        "I have no energy left"
+      ],
+      "responses": [
+        "Burnout is very real. Would you like to talk about what’s been difficult lately?",
+        "Let’s unpack what’s making you feel overwhelmed."
+      ],
+      "tips": [
+        "Take regular breaks and set boundaries with your time.",
+        "Prioritize self-care and rest.",
+        "Talk to your manager or HR if things feel unmanageable.",
+        "Consider talking to a counselor."
+      ]
+    },
+    {
+      "tag": "overwork-perfectionism",
+      "patterns": [
+        "I have to be perfect at everything",
+        "I can’t accept mistakes",
+        "I push myself too hard",
+        "I’m never satisfied with my work"
+      ],
+      "responses": [
+        "Perfectionism can be exhausting. Would you like to talk about your expectations?",
+        "It’s okay to make mistakes. Let’s talk through your feelings."
+      ],
+      "tips": [
+        "Practice self-compassion and allow yourself to be human.",
+        "Set realistic goals and celebrate progress.",
+        "Challenge negative thoughts about mistakes.",
+        "Talk to someone you trust about your feelings."
+      ]
+    },
+    {
+      "tag": "overwork-procrastination",
+      "patterns": [
+        "I keep putting things off",
+        "I can’t get started on my work",
+        "I procrastinate all the time",
+        "I feel guilty for not working"
+      ],
+      "responses": [
+        "Procrastination is a common struggle. Would you like to talk about what’s holding you back?",
+        "Let’s talk through your feelings and find ways to move forward."
+      ],
+      "tips": [
+        "Break tasks into smaller, manageable steps.",
+        "Set a timer for 10 minutes and just start.",
+        "Reward yourself for making progress.",
+        "Practice self-compassion if you struggle."
+      ]
+    },
+    {
+      "tag": "overwork-time-management",
+      "patterns": [
+        "I can’t manage my time",
+        "I feel like I’m always behind",
+        "I have too much to do",
+        "I never have enough time"
+      ],
+      "responses": [
+        "Time management can be tough. Would you like to talk about what’s been difficult?",
+        "Let’s break things down together and find ways to manage your time better."
+      ],
+      "tips": [
+        "Make a list of everything you need to do and prioritize.",
+        "Use a planner or digital tool to keep track of tasks.",
+        "Set realistic deadlines and stick to them.",
+        "Take regular breaks to avoid burnout."
+      ]
+    },
+    {
+      "tag": "overwork-work-life-balance",
+      "patterns": [
+        "I don’t have time for myself",
+        "Work takes over my life",
+        "I can’t separate work and personal time",
+        "I feel guilty for taking breaks"
+      ],
+      "responses": [
+        "Work-life balance is important. Would you like to talk about your experience?",
+        "Let’s talk through your feelings and find ways to create more balance."
+      ],
+      "tips": [
+        "Set clear boundaries between work and personal time.",
+        "Schedule regular breaks and time for yourself.",
+        "Communicate your needs with your employer or team.",
+        "Prioritize self-care and relaxation."
+      ]
+    },
+    {
+      "tag": "overwork-job-satisfaction",
+      "patterns": [
+        "I don’t like my job",
+        "I feel unfulfilled at work",
+        "I dread going to work",
+        "I want to change careers"
+      ],
+      "responses": [
+        "Job dissatisfaction can be tough. Would you like to talk about your feelings?",
+        "Let’s talk through what’s making you feel this way."
+      ],
+      "tips": [
+        "Reflect on what you enjoy and what you’d like to change.",
+        "Explore new skills or interests outside of work.",
+        "Talk to a career counselor or mentor.",
+        "Set small goals to move toward a change."
+      ]
+    },
+    {
+      "tag": "relationship-communication",
+      "patterns": [
+        "I have trouble communicating with my partner",
+        "We argue all the time",
+        "I don’t feel heard",
+        "We can’t resolve conflicts"
+      ],
+      "responses": [
+        "Communication struggles are common in relationships. Would you like to talk about your experience?",
+        "Let’s talk through your feelings and find ways to improve communication."
+      ],
+      "tips": [
+        "Practice active listening with your partner.",
+        "Use “I” statements to express your feelings.",
+        "Take breaks during heated discussions.",
+        "Consider couples counseling if needed."
+      ]
+    },
+    {
+      "tag": "relationship-trust",
+      "patterns": [
+        "I have trust issues",
+        "I don’t trust my partner",
+        "I’ve been hurt before",
+        "I’m afraid of being betrayed"
+      ],
+      "responses": [
+        "Trust issues can be painful. Would you like to talk about your feelings?",
+        "Let’s talk through your experiences and find ways to build trust."
+      ],
+      "tips": [
+        "Communicate openly with your partner about your feelings.",
+        "Set boundaries that make you feel safe.",
+        "Take things one step at a time.",
+        "Consider therapy to work through past hurts."
+      ]
+    },
+    {
+      "tag": "relationship-intimacy",
+      "patterns": [
+        "I feel distant from my partner",
+        "We lack intimacy",
+        "I want to feel closer",
+        "I miss the connection we used to have"
+      ],
+      "responses": [
+        "Intimacy struggles are common. Would you like to talk about your feelings?",
+        "Let’s talk through what’s missing and how you might reconnect."
+      ],
+      "tips": [
+        "Schedule regular time together without distractions.",
+        "Share your feelings openly with your partner.",
+        "Try new activities together to build connection.",
+        "Consider couples counseling if needed."
+      ]
+    },
+    {
+      "tag": "relationship-long-distance",
+      "patterns": [
+        "I’m in a long-distance relationship",
+        "I miss my partner",
+        "It’s hard being apart",
+        "I worry about our future"
+      ],
+      "responses": [
+        "Long-distance relationships can be tough. Would you like to talk about your feelings?",
+        "Let’s talk through your worries and find ways to stay connected."
+      ],
+      "tips": [
+        "Schedule regular video calls or virtual dates.",
+        "Share small moments of your day with each other.",
+        "Plan visits and countdowns to look forward to.",
+        "Communicate openly about your needs and feelings."
+      ]
+    },
+    {
+      "tag": "relationship-family-conflict",
+      "patterns": [
+        "I argue with my family",
+        "My family doesn’t understand me",
+        "I feel pressured by my family",
+        "I don’t get along with my relatives"
+      ],
+      "responses": [
+        "Family conflict is common. Would you like to talk about your experience?",
+        "Let’s talk through your feelings and find ways to cope."
+      ],
+      "tips": [
+        "Set boundaries with family members if needed.",
+        "Communicate your feelings calmly and clearly.",
+        "Take breaks from difficult conversations if you feel overwhelmed.",
+        "Consider family counseling if conflicts persist."
+      ]
+    },
+    {
+      "tag": "relationship-friendship-change",
+      "patterns": [
+        "My friendships have changed",
+        "I’ve grown apart from my friends",
+        "I miss my old friends",
+        "I don’t know how to make new friends"
+      ],
+      "responses": [
+        "Friendships can change over time. Would you like to talk about your feelings?",
+        "Let’s talk through your experiences and find ways to build new connections."
+      ],
+      "tips": [
+        "Reach out to old friends if you miss them.",
+        "Join clubs or groups that interest you.",
+        "Be open to making new friends in new places.",
+        "Practice self-compassion if you feel lonely."
+      ]
+    },
+    {
+      "tag": "grief-pet-loss",
+      "patterns": [
+        "I lost my pet",
+        "I miss my pet so much",
+        "I’m grieving my pet",
+        "I can’t stop thinking about my pet"
+      ],
+      "responses": [
+        "Losing a pet can be very painful. Would you like to talk about your memories?",
+        "It’s okay to feel this way. Would sharing stories help you process your feelings?"
+      ],
+      "tips": [
+        "Create a memory book or photo album of your pet.",
+        "Talk to someone who understands your loss.",
+        "Allow yourself to grieve and feel your emotions.",
+        "Consider joining a pet loss support group."
+      ]
+    },
+    {
+      "tag": "grief-anticipatory",
+      "patterns": [
+        "I’m worried about losing someone",
+        "I’m grieving before a loss",
+        "I feel sad thinking about the future",
+        "I’m scared of what’s coming"
+      ],
+      "responses": [
+        "Anticipatory grief is real and painful. Would you like to talk about your feelings?",
+        "It’s okay to feel this way. Let’s talk through your worries."
+      ],
+      "tips": [
+        "Talk to someone you trust about your feelings.",
+        "Create special memories with your loved one if possible.",
+        "Practice self-care and allow yourself to feel your emotions.",
+        "Consider talking to a counselor."
+      ]
+    },
+    {
+      "tag": "grief-anniversary",
+      "patterns": [
+        "I feel sad around anniversaries",
+        "Special dates make me miss my loved one",
+        "I get emotional on holidays",
+        "I dread certain times of year"
+      ],
+      "responses": [
+        "Anniversary reactions are common. Would you like to talk about your feelings?",
+        "It’s okay to feel sad during these times. Let’s talk through your emotions."
+      ],
+      "tips": [
+        "Plan a small ritual to honor your loved one.",
+        "Reach out to someone who understands your loss.",
+        "Allow yourself to feel your emotions without judgment.",
+        "Consider joining a support group."
+      ]
+    },
+    {
+      "tag": "stress-financial",
+      "patterns": [
+        "I’m stressed about money",
+        "I worry about bills",
+        "I can’t make ends meet",
+        "I’m afraid of the future"
+      ],
+      "responses": [
+        "Financial stress is very real. Would you like to talk about your worries?",
+        "Let’s talk through your feelings and find ways to cope."
+      ],
+      "tips": [
+        "Make a budget or financial plan if you can.",
+        "Seek advice from a financial counselor if needed.",
+        "Focus on what you can control right now.",
+        "Practice self-care to manage stress."
+      ]
+    },
+    {
+      "tag": "stress-health-family",
+      "patterns": [
+        "I’m worried about my family’s health",
+        "Someone I love is sick",
+        "I feel helpless",
+        "I can’t stop thinking about their health"
+      ],
+      "responses": [
+        "Worrying about a loved one’s health is hard. Would you like to talk about your feelings?",
+        "Let’s talk through your worries and find ways to cope."
+      ],
+      "tips": [
+        "Take care of your own health and well-being.",
+        "Reach out to others for support.",
+        "Practice relaxation techniques to manage stress.",
+        "Consider talking to a counselor."
+      ]
+    },
+    {
+      "tag": "stress-time-pressure",
+      "patterns": [
+        "I feel rushed all the time",
+        "There’s never enough time",
+        "I’m always running late",
+        "I can’t keep up"
+      ],
+      "responses": [
+        "Time pressure can be stressful. Would you like to talk about your experience?",
+        "Let’s talk through your feelings and find ways to manage your time better."
+      ],
+      "tips": [
+        "Prioritize your tasks and focus on what’s most important.",
+        "Set realistic deadlines and stick to them.",
+        "Take regular breaks to avoid burnout.",
+        "Practice self-compassion if you feel overwhelmed."
+      ]
+    },
+    {
+      "tag": "stress-change",
+      "patterns": [
+        "I’m stressed about changes in my life",
+        "I don’t like things being different",
+        "I get anxious when things change",
+        "I prefer my routine"
+      ],
+      "responses": [
+        "Change can be stressful. Would you like to talk about your feelings?",
+        "Let’s talk through your worries and find ways to cope."
+      ],
+      "tips": [
+        "Focus on what you can control in the new situation.",
+        "Take things one step at a time.",
+        "Keep some routines consistent to feel grounded.",
+        "Talk to someone you trust about your feelings."
+      ]
+    },
+    {
+      "tag": "stress-parenting",
+      "patterns": [
+        "I’m stressed about parenting",
+        "I feel overwhelmed as a parent",
+        "I don’t know if I’m doing a good job",
+        "I worry about my kids"
+      ],
+      "responses": [
+        "Parenting stress is very real. Would you like to talk about your experience?",
+        "Let’s talk through your feelings and find ways to cope."
+      ],
+      "tips": [
+        "Take breaks and prioritize self-care.",
+        "Reach out to other parents for support.",
+        "Practice self-compassion—there’s no perfect parent.",
+        "Consider talking to a counselor if you feel overwhelmed."
+      ]
+    },
+    {
+      "tag": "stress-caregiving",
+      "patterns": [
+        "I’m a caregiver for a loved one",
+        "I feel overwhelmed taking care of someone",
+        "I don’t have time for myself",
+        "I worry about my loved one’s health"
+      ],
+      "responses": [
+        "Caregiving can be very demanding. Would you like to talk about your experience?",
+        "Let’s talk through your feelings and find ways to cope."
+      ],
+      "tips": [
+        "Take breaks and prioritize your own well-being.",
+        "Ask for help from others if possible.",
+        "Join a support group for caregivers.",
+        "Consider talking to a counselor."
+      ]
+    },
+    {
+      "tag": "stress-academic",
+      "patterns": [
+        "I’m stressed about school",
+        "I worry about my grades",
+        "I feel overwhelmed by assignments",
+        "I can’t keep up with my studies"
+      ],
+      "responses": [
+        "Academic stress is common. Would you like to talk about your experience?",
+        "Let’s talk through your feelings and find ways to manage your workload."
+      ],
+      "tips": [
+        "Break assignments into smaller, manageable steps.",
+        "Set realistic goals and deadlines.",
+        "Take regular breaks to avoid burnout.",
+        "Talk to a teacher or counselor if you feel overwhelmed."
+      ]
+    },
+    {
+      "tag": "stress-exams",
+      "patterns": [
+        "I’m stressed about exams",
+        "I get anxious before tests",
+        "I worry I’ll fail",
+        "I can’t focus on studying"
+      ],
+      "responses": [
+        "Exam stress is very common. Would you like to talk about your worries?",
+        "Let’s talk through your feelings and find ways to cope."
+      ],
+      "tips": [
+        "Create a study schedule and stick to it.",
+        "Practice relaxation techniques before exams.",
+        "Take breaks and get enough sleep.",
+        "Talk to a teacher or counselor if you feel overwhelmed."
+      ]
+    },
+    {
+      "tag": "stress-new-job",
+      "patterns": [
+        "I’m stressed about starting a new job",
+        "I’m anxious about my first day",
+        "I worry I won’t fit in",
+        "I feel nervous about meeting new coworkers"
+      ],
+      "responses": [
+        "Starting a new job can be stressful. Would you like to talk about your worries?",
+        "Let’s talk through your feelings and find ways to cope."
+      ],
+      "tips": [
+        "Prepare what you can ahead of time.",
+        "Remind yourself that everyone feels nervous on their first day.",
+        "Ask questions and be open to learning.",
+        "Practice self-compassion if you make mistakes."
+      ]
+    },
+    {
+      "tag": "stress-moving",
+      "patterns": [
+        "I’m stressed about moving",
+        "I’m anxious about relocating",
+        "I worry about leaving my home",
+        "I feel overwhelmed by the process"
+      ],
+      "responses": [
+        "Moving can be both exciting and stressful. Would you like to talk about your feelings?",
+        "Let’s talk through your worries and find ways to cope."
+      ],
+      "tips": [
+        "Make a checklist and take things one step at a time.",
+        "Ask for help from friends or family if possible.",
+        "Take breaks and prioritize self-care.",
+        "Practice relaxation techniques to manage stress."
+      ]
+    },
+    {
+      "tag": "stress-relationship-change",
+      "patterns": [
+        "I’m stressed about changes in my relationship",
+        "I worry about my partner",
+        "I feel anxious about our future",
+        "I don’t know what will happen"
+      ],
+      "responses": [
+        "Relationship changes can be stressful. Would you like to talk about your feelings?",
+        "Let’s talk through your worries and find ways to cope."
+      ],
+      "tips": [
+        "Communicate openly with your partner about your feelings.",
+        "Take things one day at a time.",
+        "Practice self-care and relaxation.",
+        "Consider talking to a counselor if you feel overwhelmed."
+      ]
+    },
+    {
+      "tag": "stress-social-expectations",
+      "patterns": [
+        "I feel pressure to fit in",
+        "I worry about what others think",
+        "I feel judged by society",
+        "I don’t feel like I belong"
+      ],
+      "responses": [
+        "Social expectations can be stressful. Would you like to talk about your feelings?",
+        "Let’s talk through your worries and find ways to cope."
+      ],
+      "tips": [
+        "Focus on being true to yourself.",
+        "Surround yourself with supportive people.",
+        "Practice self-compassion and acceptance.",
+        "Talk to someone you trust about your feelings."
+      ]
+    },
+    {
+      "tag": "happiness-new-achievement",
+      "patterns": [
+        "I accomplished something new",
+        "I reached a goal",
+        "I’m proud of what I’ve done",
+        "I’m celebrating a success"
+      ],
+      "responses": [
+        "Congratulations! What did you achieve? I’d love to hear about it.",
+        "That’s wonderful! How does it feel to reach this milestone?"
+      ],
+      "tips": [
+        "Take time to celebrate your achievement.",
+        "Share your success with someone you trust.",
+        "Reflect on what helped you succeed.",
+        "Set a new goal to keep the momentum going."
+      ]
+    },
+    {
+      "tag": "gratitude",
+      "patterns": [
+        "I’m grateful for someone",
+        "I appreciate what I have",
+        "I feel thankful today",
+        "I want to express my gratitude"
+      ],
+      "responses": [
+        "Gratitude is a powerful feeling. Who or what are you thankful for?",
+        "It’s wonderful to feel grateful. Would you like to share more?"
+      ],
+      "tips": [
+        "Write a thank-you note or message.",
+        "Keep a gratitude journal.",
+        "Share your appreciation with others.",
+        "Reflect on the good things in your life."
+      ]
+    },
+    {
+      "tag": "excitement-adventure",
+      "patterns": [
+        "I’m excited about an adventure",
+        "I’m planning a trip",
+        "I can’t wait for something new",
+        "I love exploring"
+      ],
+      "responses": [
+        "Adventure is exciting! What are you looking forward to?",
+        "That sounds amazing! Tell me more about your plans."
+      ],
+      "tips": [
+        "Make a list of things you want to do or see.",
+        "Prepare for your adventure so you feel confident.",
+        "Take lots of photos to remember the experience.",
+        "Share your excitement with someone you care about."
+      ]
+    },
+    {
+      "tag": "contentment",
+      "patterns": [
+        "I feel content right now",
+        "I’m at peace with myself",
+        "I’m happy with how things are",
+        "I feel satisfied"
+      ],
+      "responses": [
+        "Contentment is a beautiful feeling. What’s making you feel this way?",
+        "It’s great to feel at peace. Would you like to talk about it?"
+      ],
+      "tips": [
+        "Savor the moment and enjoy the present.",
+        "Reflect on what brings you contentment.",
+        "Practice mindfulness to stay grounded.",
+        "Share your feelings with someone you trust."
+      ]
+    },
+    {
+      "tag": "nostalgia",
+      "patterns": [
+        "I miss the past",
+        "I feel nostalgic",
+        "I wish things were like before",
+        "I remember good times"
+      ],
+      "responses": [
+        "Nostalgia can be bittersweet. What are you remembering?",
+        "It’s okay to miss the past. Would you like to share a memory?"
+      ],
+      "tips": [
+        "Look at old photos or mementos.",
+        "Share memories with friends or family.",
+        "Write about your favorite past experiences.",
+        "Find ways to bring elements of the past into your present."
+      ]
+    },
+    {
+      "tag": "curiosity",
+      "patterns": [
+        "I’m curious about something",
+        "I want to learn more",
+        "I have a lot of questions",
+        "I love exploring new ideas"
+      ],
+      "responses": [
+        "Curiosity is a great motivator! What are you curious about?",
+        "It’s wonderful to want to learn. Would you like to talk about your interests?"
+      ],
+      "tips": [
+        "Read books or articles on your topic of interest.",
+        "Ask questions and seek out answers.",
+        "Join a group or community with similar interests.",
+        "Try new activities to satisfy your curiosity."
+      ]
+    },
+    {
+      "tag": "pride",
+      "patterns": [
+        "I’m proud of myself",
+        "I accomplished something difficult",
+        "I feel confident in my abilities",
+        "I want to celebrate my progress"
+      ],
+      "responses": [
+        "You should be proud! What did you achieve?",
+        "That’s fantastic! How does it feel to reach this milestone?"
+      ],
+      "tips": [
+        "Acknowledge your hard work and dedication.",
+        "Share your success with someone you trust.",
+        "Set new goals to keep growing.",
+        "Reflect on what you learned along the way."
+      ]
+    },
+    {
+      "tag": "surprise",
+      "patterns": [
+        "I was surprised by something",
+        "I didn’t expect that to happen",
+        "I’m shocked",
+        "Something unexpected happened"
+      ],
+      "responses": [
+        "Surprises can be exciting or unsettling. What happened?",
+        "That sounds unexpected! Would you like to talk about it?"
+      ],
+      "tips": [
+        "Take a moment to process your feelings.",
+        "Talk to someone about what surprised you.",
+        "Embrace the unexpected as an opportunity to learn.",
+        "Reflect on how you handled the situation."
+      ]
+    },
+    {
+      "tag": "relief",
+      "patterns": [
+        "I feel relieved",
+        "A weight has been lifted",
+        "I’m glad that’s over",
+        "I can finally relax"
+      ],
+      "responses": [
+        "Relief is a great feeling. What happened to make you feel this way?",
+        "It’s wonderful to feel at ease. Would you like to share more?"
+      ],
+      "tips": [
+        "Take time to rest and recharge.",
+        "Reflect on what helped you get through the situation.",
+        "Celebrate your resilience.",
+        "Share your relief with someone you trust."
+      ]
+    },
+    {
+      "tag": "inspiration",
+      "patterns": [
+        "I feel inspired",
+        "I want to create something",
+        "I have a new idea",
+        "I’m motivated to try something new"
+      ],
+      "responses": [
+        "Inspiration is powerful! What’s inspiring you?",
+        "That’s exciting! Would you like to talk about your idea?"
+      ],
+      "tips": [
+        "Write down your ideas or start a project.",
+        "Seek out more inspiration from books, art, or nature.",
+        "Share your inspiration with others.",
+        "Set aside time to work on your creative projects."
+      ]
+    },
+    {
+      "tag": "empathy",
+      "patterns": [
+        "I care about others",
+        "I want to help someone",
+        "I feel for someone else",
+        "I’m concerned about a friend"
+      ],
+      "responses": [
+        "Empathy is a beautiful quality. What’s on your mind?",
+        "It’s kind of you to care. Would you like to talk about it?"
+      ],
+      "tips": [
+        "Reach out to the person you’re concerned about.",
+        "Offer your support and listen without judgment.",
+        "Take care of your own well-being while helping others.",
+        "Practice self-compassion if you feel overwhelmed."
+      ]
+    },
+    {
+      "tag": "determination",
+      "patterns": [
+        "I’m determined to succeed",
+        "I won’t give up",
+        "I’m motivated to keep going",
+        "I have a goal and I’m sticking to it"
+      ],
+      "responses": [
+        "Determination is a powerful force. What are you working toward?",
+        "That’s admirable! How do you stay motivated?"
+      ],
+      "tips": [
+        "Break your goal into smaller steps.",
+        "Celebrate your progress along the way.",
+        "Remind yourself why your goal is important.",
+        "Seek support from friends or mentors."
+      ]
+    },
+    {
+      "tag": "resilience",
+      "patterns": [
+        "I’ve overcome a challenge",
+        "I’m stronger than I thought",
+        "I bounced back from something difficult",
+        "I feel resilient"
+      ],
+      "responses": [
+        "Resilience is something to be proud of. What challenge did you overcome?",
+        "That’s amazing! How did you get through it?"
+      ],
+      "tips": [
+        "Reflect on what helped you persevere.",
+        "Share your story with someone who might benefit.",
+        "Celebrate your strength and growth.",
+        "Use your experience to help others."
+      ]
+    },
+    {
+      "tag": "optimism",
+      "patterns": [
+        "I feel optimistic about the future",
+        "I believe things will get better",
+        "I see good things ahead",
+        "I’m hopeful"
+      ],
+      "responses": [
+        "Optimism is a great mindset. What’s making you feel hopeful?",
+        "That’s wonderful! Would you like to share your thoughts?"
+      ],
+      "tips": [
+        "Focus on positive possibilities.",
+        "Surround yourself with supportive people.",
+        "Set small goals to keep moving forward.",
+        "Practice gratitude for what you have."
+      ]
+    },
+    {
+      "tag": "acceptance",
+      "patterns": [
+        "I’ve accepted something difficult",
+        "I’m at peace with a situation",
+        "I’ve made peace with the past",
+        "I’m learning to let go"
+      ],
+      "responses": [
+        "Acceptance is a powerful step. What have you come to accept?",
+        "It’s not easy to let go. Would you like to talk about it?"
+      ],
+      "tips": [
+        "Practice self-compassion as you move forward.",
+        "Reflect on what you’ve learned from the experience.",
+        "Share your journey with someone you trust.",
+        "Focus on the present and what you can control."
+      ]
+    },
+    {
+      "tag": "compassion-self",
+      "patterns": [
+        "I’m learning to be kind to myself",
+        "I’m practicing self-compassion",
+        "I forgive myself",
+        "I’m gentle with myself"
+      ],
+      "responses": [
+        "Self-compassion is so important. How are you practicing it?",
+        "That’s wonderful! Would you like to share your journey?"
+      ],
+      "tips": [
+        "Remind yourself that everyone makes mistakes.",
+        "Treat yourself as you would a good friend.",
+        "Practice positive self-talk.",
+        "Celebrate your progress, no matter how small."
+      ]
+    },
+    {
+      "tag": "compassion-others",
+      "patterns": [
+        "I want to be more compassionate",
+        "I care about others’ feelings",
+        "I’m trying to understand someone",
+        "I want to help"
+      ],
+      "responses": [
+        "Compassion makes the world better. How are you showing it?",
+        "That’s a beautiful intention. Would you like to talk about it?"
+      ],
+      "tips": [
+        "Listen actively when others share their feelings.",
+        "Offer support without judgment.",
+        "Practice empathy by imagining yourself in their shoes.",
+        "Take care of your own well-being while helping others."
+      ]
+    },
+    {
+      "tag": "love",
+      "patterns": [
+        "I feel loved",
+        "I’m in love",
+        "I care deeply about someone",
+        "I feel connected"
+      ],
+      "responses": [
+        "Love is a wonderful feeling. Who or what are you thinking of?",
+        "That’s beautiful! Would you like to share your feelings?"
+      ],
+      "tips": [
+        "Express your love to the people who matter to you.",
+        "Spend quality time with loved ones.",
+        "Practice gratitude for the love in your life.",
+        "Celebrate your relationships."
+      ]
+    },
+    {
+      "tag": "friendship",
+      "patterns": [
+        "I value my friendships",
+        "My friends mean a lot to me",
+        "I’m grateful for my friends",
+        "I feel supported by my friends"
+      ],
+      "responses": [
+        "Friendship is so important. What do you appreciate about your friends?",
+        "That’s wonderful! Would you like to talk about your friendships?"
+      ],
+      "tips": [
+        "Reach out to a friend and let them know you care.",
+        "Plan something fun together.",
+        "Reflect on what makes your friendships special.",
+        "Celebrate your friends’ successes."
+      ]
+    },
+    {
+      "tag": "family",
+      "patterns": [
+        "I love my family",
+        "My family supports me",
+        "I’m grateful for my family",
+        "I feel connected to my family"
+      ],
+      "responses": [
+        "Family is a special bond. What do you appreciate about yours?",
+        "That’s wonderful! Would you like to share your feelings?"
+      ],
+      "tips": [
+        "Spend quality time with your family.",
+        "Express your appreciation to them.",
+        "Reflect on your favorite family memories.",
+        "Celebrate your family’s strengths."
+      ]
+    },
+    {
+      "tag": "community",
+      "patterns": [
+        "I feel part of a community",
+        "I’m grateful for my community",
+        "I want to give back",
+        "I feel supported by my community"
+      ],
+      "responses": [
+        "Community is powerful. What do you appreciate about yours?",
+        "That’s wonderful! Would you like to talk about your community?"
+      ],
+      "tips": [
+        "Get involved in community events or activities.",
+        "Offer your help or support to others.",
+        "Reflect on what you’ve gained from your community.",
+        "Celebrate the connections you’ve made."
+      ]
+    },
+    {
+      "tag": "creativity",
+      "patterns": [
+        "I feel creative",
+        "I want to make something",
+        "I have a new idea",
+        "I’m inspired to create"
+      ],
+      "responses": [
+        "Creativity is a great outlet. What are you working on?",
+        "That’s exciting! Would you like to share your idea?"
+      ],
+      "tips": [
+        "Set aside time for creative activities.",
+        "Try something new or experiment with different mediums.",
+        "Share your creations with others.",
+        "Reflect on what inspires you."
+      ]
+    },
+    {
+      "tag": "growth",
+      "patterns": [
+        "I’m growing as a person",
+        "I’ve learned a lot recently",
+        "I feel like I’m changing",
+        "I’m evolving"
+      ],
+      "responses": [
+        "Personal growth is something to celebrate. What have you learned?",
+        "That’s wonderful! Would you like to talk about your journey?"
+      ],
+      "tips": [
+        "Reflect on your progress and achievements.",
+        "Set new goals to keep growing.",
+        "Share your experiences with someone you trust.",
+        "Celebrate your growth, no matter how small."
+      ]
+    },
+    {
+      "tag": "achievement",
+      "patterns": [
+        "I achieved something important",
+        "I reached a personal goal",
+        "I’m proud of my progress",
+        "I accomplished something I worked hard for"
+      ],
+      "responses": [
+        "That’s amazing! What did you achieve?",
+        "Congratulations! How does it feel to reach this milestone?"
+      ],
+      "tips": [
+        "Take time to celebrate your achievement.",
+        "Share your success with someone you trust.",
+        "Reflect on what helped you succeed.",
+        "Set a new goal to keep the momentum going."
+      ]
+    },
+    {
+      "tag": "purpose",
+      "patterns": [
+        "I’m motivated by my purpose",
+        "I feel driven by my values",
+        "I know why I’m doing this",
+        "I’m committed to my mission",
+        "I want to talk about my purpose",
+        "What is my purpose?",
+        "I need to find my purpose"
+      ],
+      "responses": [
+        "Purpose is a powerful motivator. What gives you meaning?",
+        "That’s wonderful! Would you like to talk about your purpose?",
+        "Let’s explore what matters most to you."
+      ],
+      "tips": [
+        "Reflect on what matters most to you.",
+        "Set goals aligned with your values.",
+        "Share your purpose with others.",
+        "Celebrate the impact you’re making."
+      ]
+    },
+    {
+      "tag": "motivation-new",
+      "patterns": [
+        "I’m motivated to start something new",
+        "I feel energized",
+        "I want to try something different",
+        "I’m excited to begin"
+      ],
+      "responses": [
+        "New motivation is a great feeling. What are you starting?",
+        "That’s exciting! Would you like to talk about your plans?"
+      ],
+      "tips": [
+        "Set clear goals for your new project.",
+        "Break your plans into small, manageable steps.",
+        "Celebrate your progress along the way.",
+        "Seek support from friends or mentors."
+      ]
+    },
+    {
+      "tag": "motivation-setback",
+      "patterns": [
+        "I lost motivation after a setback",
+        "I’m struggling to get back on track",
+        "I feel discouraged",
+        "I want to regain my drive"
+      ],
+      "responses": [
+        "Setbacks happen to everyone. What’s been challenging for you?",
+        "It’s okay to feel discouraged. Would you like to talk about it?"
+      ],
+      "tips": [
+        "Be kind to yourself and acknowledge your effort.",
+        "Reflect on what you’s learned from the setback.",
+        "Set a small, achievable goal to rebuild momentum.",
+        "Reach out to someone for support."
+      ]
+    },
+    {
+      "tag": "motivation-routine",
+      "patterns": [
+        "I’m motivated by my routine",
+        "I feel good when I stick to my habits",
+        "My routine keeps me going",
+        "I’m disciplined"
+      ],
+      "responses": [
+        "Routines can be powerful motivators. What works for you?",
+        "That’s great! Would you like to share your strategies?"
+      ],
+      "tips": [
+        "Identify the habits that help you most.",
+        "Celebrate your consistency.",
+        "Adjust your routine as needed to keep it fresh.",
+        "Share your routine with someone who might benefit."
+      ]
+    },
+    {
+      "tag": "motivation-inspiration",
+      "patterns": [
+        "I’m inspired to keep going",
+        "I found new motivation",
+        "I feel energized by something",
+        "I’m ready to take on new challenges"
+      ],
+      "responses": [
+        "Inspiration is a great motivator. What’s inspiring you?",
+        "That’s wonderful! Would you like to share your story?"
+      ],
+      "tips": [
+        "Seek out sources of inspiration that resonate with you.",
+        "Set new goals based on your inspiration.",
+        "Share your motivation with others.",
+        "Reflect on what keeps you going."
+      ]
+    },
+    {
+      "tag": "motivation-support",
+      "patterns": [
+        "I’m motivated by my support network",
+        "My friends keep me going",
+        "I feel encouraged by others",
+        "I’m grateful for the people who help me"
+      ],
+      "responses": [
+        "Support is a powerful motivator. Who is helping you?",
+        "That’s wonderful! Would you like to talk about your support system?"
+      ],
+      "tips": [
+        "Express your gratitude to those who support you.",
+        "Reach out when you need encouragement.",
+        "Offer your support to others in return.",
+        "Celebrate your progress together."
+      ]
+    },
+    {
+      "tag": "motivation-goal",
+      "patterns": [
+        "I’m motivated by my goals",
+        "My goals keep me focused",
+        "I’m working toward something important",
+        "I feel driven"
+      ],
+      "responses": [
+        "Goals are a great source of motivation. What are you working toward?",
+        "That’s admirable! How do you stay focused?"
+      ],
+      "tips": [
+        "Break your goals into smaller steps.",
+        "Celebrate your progress along the way.",
+        "Adjust your goals as needed.",
+        "Share your journey with someone you trust."
+      ]
+    },
+    {
+      "tag": "motivation-positive",
+      "patterns": [
+        "I’m motivated by positive thinking",
+        "I try to stay optimistic",
+        "I focus on the good",
+        "I’m encouraged by positive outcomes"
+      ],
+      "responses": [
+        "Positive thinking is a great motivator. What helps you stay optimistic?",
+        "That’s wonderful! Would you like to share your approach?"
+      ],
+      "tips": [
+        "Practice gratitude for what you have.",
+        "Surround yourself with positive influences.",
+        "Reflect on your successes, no matter how small.",
+        "Share your positivity with others."
+      ]
+    },
+    {
+      "tag": "motivation-challenge",
+      "patterns": [
+        "I’m motivated by challenges",
+        "I like to push myself",
+        "I feel energized by difficult tasks",
+        "I enjoy overcoming obstacles"
+      ],
+      "responses": [
+        "Challenges can be motivating. What challenge are you facing?",
+        "That’s great! How do you approach difficult tasks?"
+      ],
+      "tips": [
+        "Break challenges into smaller, manageable parts.",
+        "Celebrate your progress as you go.",
+        "Seek support when you need it.",
+        "Reflect on what you’ve learned from past challenges."
+      ]
+    },
+    {
+      "tag": "motivation-joy",
+      "patterns": [
+        "I’m motivated by joy",
+        "I feel good when I’m happy",
+        "I want to do more of what brings me joy",
+        "I’m inspired by positive experiences"
+      ],
+      "responses": [
+        "Joy is a wonderful motivator. What brings you joy?",
+        "That’s wonderful! Would you like to share your experiences?"
+      ],
+      "tips": [
+        "Make time for activities that make you happy.",
+        "Surround yourself with positive influences.",
+        "Celebrate your joyful moments.",
+        "Share your joy with others."
+      ]
+    },
+    {
+      "tag": "motivation-gratitude",
+      "patterns": [
+        "I’m motivated by gratitude",
+        "I feel good when I’m thankful",
+        "I want to express my appreciation",
+        "I’m inspired by what I have"
+      ],
+      "responses": [
+        "Gratitude is a powerful motivator. What are you thankful for?",
+        "That’s wonderful! Would you like to share your gratitude?"
+      ],
+      "tips": [
+        "Keep a gratitude journal.",
+        "Express your appreciation to others.",
+        "Reflect on the good things in your life.",
+        "Use your gratitude to inspire positive actions."
+      ]
+    },
+    {
+      "tag": "motivation-kindness",
+      "patterns": [
+        "I’m motivated by kindness",
+        "I feel good when I help others",
+        "I want to be kind",
+        "I’m inspired by acts of kindness"
+      ],
+      "responses": [
+        "Kindness is a wonderful motivator. How do you practice it?",
+        "That’s beautiful! Would you like to share your experiences?"
+      ],
+      "tips": [
+        "Look for opportunities to help others.",
+        "Practice random acts of kindness.",
+        "Celebrate the kindness you see in the world.",
+        "Share your motivation with others."
+      ]
+    },
+    {
+      "tag": "motivation-self-care",
+      "patterns": [
+        "I’m motivated to take care of myself",
+        "I feel good when I practice self-care",
+        "I want to prioritize my well-being",
+        "I’m inspired by self-care routines"
+      ],
+      "responses": [
+        "Self-care is a great motivator. What do you do to take care of yourself?",
+        "That’s wonderful! Would you like to share your routine?"
+      ],
+      "tips": [
+        "Set aside regular time for self-care.",
+        "Identify activities that help you recharge.",
+        "Celebrate your commitment to your well-being.",
+        "Share your self-care practices with others."
+      ]
+    },
+    {
+      "tag": "motivation-connection",
+      "patterns": [
+        "I’m motivated by my connections",
+        "I feel good when I’m with others",
+        "I want to build stronger relationships",
+        "I’m inspired by meaningful connections"
+      ],
+      "responses": [
+        "Connection is a powerful motivator. Who do you feel connected to?",
+        "That’s wonderful! Would you like to talk about your relationships?"
+      ],
+      "tips": [
+        "Reach out to people you care about.",
+        "Invest time in building strong relationships.",
+        "Celebrate your connections and shared experiences.",
+        "Share your motivation with others."
+      ]
+    },
+    {
+      "tag": "motivation-achievement",
+      "patterns": [
+        "I’m motivated by my achievements",
+        "I feel good when I accomplish something",
+        "I want to reach new goals",
+        "I’m inspired by my progress"
+      ],
+      "responses": [
+        "Achievement is a great motivator. What have you accomplished?",
+        "That’s wonderful! Would you like to share your progress?"
+      ],
+      "tips": [
+        "Set new goals to keep growing.",
+        "Celebrate your achievements, no matter how small.",
+        "Reflect on what helped you succeed.",
+        "Share your motivation with others."
+      ]
+    },
+    {
+      "tag": "motivation-hope",
+      "patterns": [
+        "I’m motivated by hope",
+        "I feel good when I’m hopeful",
+        "I want to believe in a better future",
+        "I’m inspired by positive possibilities"
+      ],
+      "responses": [
+        "Hope is a powerful motivator. What gives you hope?",
+        "That’s wonderful! Would you like to share your thoughts?"
+      ],
+      "tips": [
+        "Focus on positive possibilities.",
+        "Surround yourself with hopeful influences.",
+        "Celebrate your optimism.",
+        "Share your hope with others."
+      ]
+    },
+    {
+      "tag": "motivation-change",
+      "patterns": [
+        "I’m motivated by change",
+        "I feel good when I try something new",
+        "I want to grow and evolve",
+        "I’m inspired by transformation"
+      ],
+      "responses": [
+        "Change can be a great motivator. What are you changing?",
+        "That’s wonderful! Would you like to share your journey?"
+      ],
+      "tips": [
+        "Embrace new experiences and opportunities.",
+        "Reflect on how you’ve grown through change.",
+        "Celebrate your adaptability.",
+        "Share your motivation with others."
+      ]
+    },
+    {
+      "tag": "motivation-passion",
+      "patterns": [
+        "I’m motivated by my passion",
+        "I feel energized by what I love",
+        "I want to pursue my interests",
+        "I’m inspired by my enthusiasm"
+      ],
+      "responses": [
+        "Passion is a great motivator. What are you passionate about?",
+        "That’s wonderful! Would you like to share your interests?"
+      ],
+      "tips": [
+        "Set aside time for your passions.",
+        "Seek out opportunities to explore your interests.",
+        "Celebrate your enthusiasm.",
+        "Share your motivation with others."
+      ]
+    },
+    {
+      "tag": "motivation-purpose-driven",
+      "patterns": [
+        "I’m motivated by a sense of purpose",
+        "I feel driven by my mission",
+        "I want to make a meaningful impact",
+        "I’m inspired by my values"
+      ],
+      "responses": [
+        "Purpose is a powerful motivator. What gives you meaning?",
+        "That’s wonderful! Would you like to talk about your mission?"
+      ],
+      "tips": [
+        "Reflect on what matters most to you.",
+        "Set goals aligned with your purpose.",
+        "Celebrate your impact.",
+        "Share your motivation with others."
+      ]
+    },
+    {
+      "tag": "motivation-growth-mindset",
+      "patterns": [
+        "I’m motivated by a growth mindset",
+        "I believe I can improve",
+        "I want to learn from challenges",
+        "I’m inspired by progress"
+      ],
+      "responses": [
+        "A growth mindset is a great motivator. How do you practice it?",
+        "That’s wonderful! Would you like to share your approach?"
+      ],
+      "tips": [
+        "Embrace challenges as opportunities to learn.",
+        "Celebrate your progress, not just results.",
+        "Reflect on what you’ve learned from setbacks.",
+        "Share your growth mindset with others."
+      ]
+    },
+    {
+      "tag": "motivation-compassion",
+      "patterns": [
+        "I’m motivated by compassion",
+        "I feel good when I help others",
+        "I want to make a difference",
+        "I’m inspired by kindness"
+      ],
+      "responses": [
+        "Compassion is a powerful motivator. How do you practice it?",
+        "That’s beautiful! Would you like to share your experiences?"
+      ],
+      "tips": [
+        "Look for opportunities to help others.",
+        "Practice empathy and understanding.",
+        "Celebrate acts of compassion you see in the world.",
+        "Share your motivation with others."
+      ]
+    },
+  {
+    "tag": "anxiety-crowds",
+    "patterns": [
+      "I panic in crowded places",
+      "I avoid going to busy places",
+      "Large crowds make me feel trapped",
+      "Being around too many people stresses me out"
+    ],
+    "responses": [
+      "It's okay to feel overwhelmed in crowds. Want to talk about your last experience?",
+      "You’re not alone. Crowds can trigger anxiety for many people. Shall we explore this?"
+    ],
+    "tips": [
+      "Identify exits or quiet areas when entering a crowded space.",
+      "Use headphones or calming music to reduce sensory overload.",
+      "Bring a friend along for support.",
+      "Practice exposure gradually, starting with smaller gatherings."
+    ]
+  },
+  {
+    "tag": "depression-hopeless",
+    "patterns": [
+      "I feel like nothing will ever get better",
+      "I’m losing hope",
+      "There’s no point in trying",
+      "Everything feels pointless"
+    ],
+    "responses": [
+      "I hear you. It’s hard to feel hopeful sometimes, but you're not alone.",
+      "It’s okay to feel this way. Want to talk about what’s been going on?"
+    ],
+    "tips": [
+      "Set one small goal for your day, like brushing your teeth or taking a walk.",
+      "Write down one thing you liked about today.",
+      "Talk to someone you trust, even briefly.",
+      "Remind yourself that feelings can change, even when it doesn’t feel like it."
+    ]
+  },
+  {
+    "tag": "sleep-insomnia",
+    "patterns": [
+      "I can't sleep at night",
+      "My thoughts keep me awake",
+      "I wake up multiple times",
+      "I feel exhausted in the morning"
+    ],
+    "responses": [
+      "Sleep issues can really wear you down. Would you like some tips?",
+      "Let’s figure out what’s been interfering with your sleep."
+    ],
+    "tips": [
+      "Try to go to bed and wake up at the same time daily.",
+      "Avoid screens at least an hour before bed.",
+      "Use your bed only for sleep, not for work or eating.",
+      "Consider journaling your thoughts before bedtime."
+    ]
+  },
+  {
+    "tag": "anger-control",
+    "patterns": [
+      "I get angry too easily",
+      "I explode over small things",
+      "I can’t control my temper",
+      "I regret how I act when I’m angry"
+    ],
+    "responses": [
+      "Anger can be intense. Want to unpack what’s behind it?",
+      "It's great that you're aware of your reactions. That’s a strong first step."
+    ],
+    "tips": [
+      "Count to 10 before reacting.",
+      "Walk away from heated situations if needed.",
+      "Practice naming your feelings before they escalate.",
+      "Try physical outlets like running or punching a pillow."
+    ]
+  },
+  {
+    "tag": "loneliness-isolation",
+    "patterns": [
+      "I feel so alone",
+      "No one really understands me",
+      "I have no one to talk to",
+      "I feel invisible"
+    ],
+    "responses": [
+      "That sounds really tough. Want to talk more about what’s been happening?",
+      "You're not alone in feeling this way. I'm here to listen."
+    ],
+    "tips": [
+      "Try reaching out to one person, even if just through a message.",
+      "Join an online community based on your interests.",
+      "Volunteer or attend local events to meet others.",
+      "Keep a journal to stay connected with your own thoughts."
+    ]
+  },
+  {
+    "tag": "confidence-low",
+    "patterns": [
+      "I don't believe in myself",
+      "I feel like I can’t do anything right",
+      "I always doubt my abilities",
+      "I'm not good enough"
+    ],
+    "responses": [
+      "Many people struggle with confidence. Want to talk about a recent situation?",
+      "Self-doubt can be heavy. Let's look at ways to build yourself up."
+    ],
+    "tips": [
+      "Write down three things you did well today.",
+      "Celebrate small wins, even if they seem tiny.",
+      "Challenge your inner critic with facts.",
+      "Practice self-affirmations daily."
+    ]
+  },
+  {
+    "tag": "panic-attack",
+    "patterns": [
+      "My heart races and I can't breathe",
+      "I feel like I’m dying",
+      "I suddenly get overwhelmed and shaky",
+      "I have episodes of panic out of nowhere"
+    ],
+    "responses": [
+      "Panic attacks are frightening but you’re safe now. Want to breathe together?",
+      "Let’s focus on grounding techniques to help during those moments."
+    ],
+    "tips": [
+      "Breathe in for 4 seconds, hold for 4, out for 4.",
+      "Hold something cold like an ice cube to ground yourself.",
+      "Focus on naming 5 things you can see.",
+      "Remind yourself: This will pass."
+    ]
+  },
+  {
+    "tag": "overthinking",
+    "patterns": [
+      "I can’t stop overthinking everything",
+      "My mind just won’t shut off",
+      "I replay conversations over and over",
+      "I keep imagining worst-case scenarios"
+    ],
+    "responses": [
+      "Overthinking can be exhausting. Want to talk through what’s on your mind?",
+      "Let’s work on calming that mental storm together."
+    ],
+    "tips": [
+      "Try writing your thoughts down and closing the notebook.",
+      "Set a timer for 'worry time'—limit your thinking to 10 minutes.",
+      "Practice mindfulness or grounding exercises.",
+      "Challenge the need for perfection in every decision."
+    ]
+  },
+  {
+    "tag": "motivation-lack",
+    "patterns": [
+      "I can’t seem to get anything done",
+      "I feel unmotivated all the time",
+      "Even basic tasks feel impossible",
+      "I just want to stay in bed"
+    ],
+    "responses": [
+      "It's okay to feel like this. Small steps are still steps.",
+      "Let’s find one small thing you can do today. I’m with you."
+    ],
+    "tips": [
+      "Break tasks into tiny parts—just starting is a win.",
+      "Use a timer to work in short bursts (e.g., Pomodoro technique).",
+      "Reward yourself after finishing a small task.",
+      "Start with something easy and build momentum."
+    ]
+  },
+  {
+    "tag": "body-image",
+    "patterns": [
+      "I hate how I look",
+      "I don’t feel good in my body",
+      "I avoid mirrors",
+      "I feel ugly"
+    ],
+    "responses": [
+      "Body image struggles are real and painful. You deserve kindness.",
+      "Want to talk about what triggered these feelings?"
+    ],
+    "tips": [
+      "List things your body does for you—not how it looks.",
+      "Unfollow accounts that make you feel bad.",
+      "Wear clothes that make you feel comfortable.",
+      "Speak to yourself like you would to a friend."
+    ]
+  },
+  {
+    "tag": "stress-academic",
+    "patterns": [
+      "I'm stressed about exams",
+      "I can’t handle my school workload",
+      "Deadlines are overwhelming me",
+      "I feel like I’m failing academically"
+    ],
+    "responses": [
+      "Academic pressure can feel overwhelming. Let’s break it down together.",
+      "You’re not alone in this. Want to create a small plan together?"
+    ],
+    "tips": [
+      "Break study sessions into 25-minute chunks with breaks.",
+      "List your priorities and focus on one thing at a time.",
+      "Talk to a teacher or mentor about your struggles.",
+      "Avoid comparing yourself to others academically."
+    ]
+  },
+  {
+    "tag": "relationship-breakup",
+    "patterns": [
+      "I just went through a breakup",
+      "I miss my ex",
+      "I feel heartbroken",
+      "I don’t know how to move on"
+    ],
+    "responses": [
+      "Breakups can feel like the end of the world. Want to talk about it?",
+      "Healing takes time. Let’s take it one step at a time."
+    ],
+    "tips": [
+      "Allow yourself to grieve—it’s normal.",
+      "Avoid checking on your ex’s social media.",
+      "Spend time with supportive friends or family.",
+      "Start a new hobby or activity to shift focus."
+    ]
+  },
+  {
+    "tag": "grief-loss",
+    "patterns": [
+      "I lost someone close to me",
+      "Grief is consuming me",
+      "I keep crying and can’t stop",
+      "I feel empty after the loss"
+    ],
+    "responses": [
+      "I’m really sorry for your loss. Do you want to talk about them?",
+      "Grief takes many shapes. I’m here for you as you process it."
+    ],
+    "tips": [
+      "Talk about your loved one—it keeps their memory alive.",
+      "Allow yourself to cry and feel.",
+      "Keep a memory journal or scrapbook.",
+      "Seek support groups or grief counseling if needed."
+    ]
+  },
+  {
+    "tag": "career-confusion",
+    "patterns": [
+      "I don’t know what to do with my career",
+      "I feel stuck professionally",
+      "I’m afraid of choosing the wrong career",
+      "I feel lost about my future"
+    ],
+    "responses": [
+      "It’s okay to not have everything figured out. Let’s explore some options together.",
+      "Career confusion is normal. Let’s talk about what excites you."
+    ],
+    "tips": [
+      "List what you enjoy doing and what you’re good at.",
+      "Talk to professionals or mentors in different fields.",
+      "Try short internships or courses to explore interests.",
+      "Give yourself time—careers evolve with you."
+    ]
+  },
+  {
+    "tag": "self-worth",
+    "patterns": [
+      "I don’t think I matter",
+      "I feel useless",
+      "I’m not important to anyone",
+      "No one would notice if I disappeared"
+    ],
+    "responses": [
+      "You matter more than you know. I’m really glad you’re here.",
+      "It’s painful to feel this way. You are important and worthy."
+    ],
+    "tips": [
+      "Write down things you’ve done for others, big or small.",
+      "Practice saying one positive thing about yourself daily.",
+      "Keep a journal of small daily accomplishments.",
+      "Spend time with people who value you."
+    ]
+  },
+  {
+    "tag": "perfectionism",
+    "patterns": [
+      "I always have to be perfect",
+      "I’m scared to make mistakes",
+      "Nothing I do is ever good enough",
+      "I feel like a failure if I’m not the best"
+    ],
+    "responses": [
+      "Perfectionism can be exhausting. Want to talk about where it comes from?",
+      "Let’s shift the focus from perfect to progress."
+    ],
+    "tips": [
+      "Remind yourself: Done is better than perfect.",
+      "Celebrate efforts, not just outcomes.",
+      "Challenge black-and-white thinking.",
+      "Try something just for fun, not perfection."
+    ]
+  },
+  {
+    "tag": "fear-of-failure",
+    "patterns": [
+      "I’m scared of failing",
+      "What if I mess everything up?",
+      "Failure terrifies me",
+      "I avoid trying so I don’t fail"
+    ],
+    "responses": [
+      "Fear of failure is powerful, but it doesn’t define you.",
+      "Trying is a form of bravery. Let’s unpack this fear together."
+    ],
+    "tips": [
+      "List what you’d learn even if you fail.",
+      "Visualize the worst-case scenario and how you'd handle it.",
+      "Practice failing at small things safely.",
+      "Celebrate effort, not just success."
+    ]
+  },
+  {
+    "tag": "jealousy-envy",
+    "patterns": [
+      "I get jealous easily",
+      "I compare myself to others too much",
+      "I feel envious of my friends’ success",
+      "Social media makes me feel left out"
+    ],
+    "responses": [
+      "Jealousy is a human emotion. Let’s explore what’s behind it.",
+      "It’s okay to feel this way. Want to talk about what triggered it?"
+    ],
+    "tips": [
+      "Unfollow accounts that make you feel bad.",
+      "Practice gratitude for what you have.",
+      "Use envy as a signal for what you desire.",
+      "Remind yourself that everyone has struggles—often unseen."
+    ]
+  },
+  {
+    "tag": "trust-issues",
+    "patterns": [
+      "I don’t trust anyone",
+      "I’ve been betrayed too many times",
+      "It’s hard for me to open up",
+      "I always expect the worst from people"
+    ],
+    "responses": [
+      "Trust issues often come from deep hurt. Let’s talk through it.",
+      "It’s okay to protect yourself. You deserve safe connections."
+    ],
+    "tips": [
+      "Set boundaries that make you feel safe.",
+      "Take small steps in trusting others over time.",
+      "Journal about past betrayals to understand patterns.",
+      "Therapy can help rebuild trust in a safe space."
+    ]
+  },
+  {
+    "tag": "emotional-numbness",
+    "patterns": [
+      "I don’t feel anything anymore",
+      "I’m emotionally numb",
+      "I feel disconnected from myself",
+      "Nothing makes me happy or sad"
+    ],
+    "responses": [
+      "Emotional numbness can be your brain’s way of protecting you. Want to talk?",
+      "Let’s try reconnecting with your feelings together."
+    ],
+    "tips": [
+      "Try gentle sensory activities—warm shower, music, or aromatherapy.",
+      "Start journaling your daily experiences without judgment.",
+      "Revisit a hobby you once enjoyed.",
+      "Speak to a mental health professional if the numbness persists."
+    ]
+    },
+  {
+    "tag": "procrastination",
+    "patterns": [
+      "I keep putting things off",
+      "I wait till the last minute for everything",
+      "I know I should start, but I don’t",
+      "I waste a lot of time doing nothing"
+    ],
+    "responses": [
+      "Procrastination is common, and it doesn’t mean you’re lazy. Let’s work through it.",
+      "Want to talk about what’s making it hard to begin?"
+    ],
+    "tips": [
+      "Use a timer to work for just 5 minutes and then pause.",
+      "Break big tasks into small, manageable steps.",
+      "Start with the easiest part to build momentum.",
+      "Set a visible reminder or to-do list in your space."
+    ]
+  },
+  {
+    "tag": "fear-rejection",
+    "patterns": [
+      "I’m scared people won’t like me",
+      "Rejection hurts so much",
+      "I avoid putting myself out there",
+      "I feel crushed when people say no"
+    ],
+    "responses": [
+      "Rejection can feel so personal. You’re not alone in this.",
+      "Let’s work on strengthening your self-worth beyond others’ responses."
+    ],
+    "tips": [
+      "Remind yourself: rejection isn’t about your worth.",
+      "Try something where rejection is likely—build tolerance gently.",
+      "Talk kindly to yourself after a rejection.",
+      "Celebrate the effort of trying, not just the result."
+    ]
+  },
+  {
+    "tag": "guilt-shame",
+    "patterns": [
+      "I feel guilty all the time",
+      "I can’t forgive myself",
+      "I’m ashamed of what I did",
+      "I keep replaying my mistakes"
+    ],
+    "responses": [
+      "Carrying guilt can be heavy. Let’s explore how to lighten that load.",
+      "You’re human, and mistakes don’t define you. Let’s unpack this together."
+    ],
+    "tips": [
+      "Apologize or make amends if appropriate.",
+      "Write a letter to yourself from a compassionate perspective.",
+      "Remind yourself that learning comes from mistakes.",
+      "Avoid self-punishment—practice self-forgiveness instead."
+    ]
+  },
+  {
+    "tag": "burnout",
+    "patterns": [
+      "I feel completely drained",
+      "I’m tired all the time",
+      "I’ve lost interest in everything",
+      "Even fun things feel exhausting"
+    ],
+    "responses": [
+      "Burnout can creep up on us. Let’s look at what might be draining you.",
+      "You deserve rest. It’s okay to slow down and take care of yourself."
+    ],
+    "tips": [
+      "Take short breaks throughout the day to recharge.",
+      "Prioritize rest as much as productivity.",
+      "Say no to extra commitments when you're overwhelmed.",
+      "Do something purely for joy, not achievement."
+    ]
+  },
+  {
+    "tag": "self-harm-urges",
+    "patterns": [
+      "I feel like hurting myself",
+      "Sometimes I want to cut or burn myself",
+      "Pain helps me cope",
+      "I don’t know how else to release this"
+    ],
+    "responses": [
+      "I'm really sorry you're feeling this way. You're not alone—do you want to talk about what’s causing the pain?",
+      "Let’s find safer ways to cope with these overwhelming feelings."
+    ],
+    "tips": [
+      "Hold ice cubes or snap a rubber band on your wrist instead.",
+      "Draw red lines on your skin instead of harming.",
+      "Journal or talk about the pain instead of bottling it up.",
+      "Reach out to a crisis line or trusted person when urges are strong."
+    ]
+  },
+  {
+    "tag": "emotional-overload",
+    "patterns": [
+      "I feel everything all at once",
+      "My emotions are too much",
+      "I cry without knowing why",
+      "I feel like I’m going to explode"
+    ],
+    "responses": [
+      "Feeling overwhelmed emotionally is valid. Want to break it down together?",
+      "It’s okay to feel deeply. Let’s find calm in the chaos."
+    ],
+    "tips": [
+      "Try labeling your emotions one by one.",
+      "Splash cold water on your face or hold something cool.",
+      "Use grounding techniques like the 5-4-3-2-1 method.",
+      "Write your thoughts out and tear the page afterward."
+    ]
+  },
+  {
+    "tag": "addiction-urges",
+    "patterns": [
+      "I want to use again",
+      "I can’t resist the cravings",
+      "I feel pulled back into old habits",
+      "I’m scared I’ll relapse"
+    ],
+    "responses": [
+      "Cravings can feel powerful, but they do pass. Want help riding the wave?",
+      "Relapse doesn’t mean failure. You're still worthy of support."
+    ],
+    "tips": [
+      "Call or message a support person when cravings hit.",
+      "Distract yourself with a walk or quick activity.",
+      "Remember your reasons for staying clean—write them down.",
+      "Attend a recovery group or meeting if possible."
+    ]
+  },
+  {
+    "tag": "financial-stress",
+    "patterns": [
+      "I’m worried about money",
+      "I can’t pay my bills",
+      "I feel anxious about my finances",
+      "Debt is ruining my peace"
+    ],
+    "responses": [
+      "Financial stress is heavy. Want to talk through some options?",
+      "You’re doing your best in a tough situation. Let’s brainstorm together."
+    ],
+    "tips": [
+      "List all your expenses and prioritize essentials.",
+      "Look into free or local financial counseling.",
+      "Avoid making big financial decisions under stress.",
+      "Celebrate small wins like budgeting or saving a little."
+    ]
+  },
+  {
+    "tag": "change-fear",
+    "patterns": [
+      "I’m afraid of change",
+      "New situations scare me",
+      "I don’t like leaving my comfort zone",
+      "Uncertainty makes me anxious"
+    ],
+    "responses": [
+      "Change can be scary but also a chance to grow. Let’s talk through your fears.",
+      "You’re allowed to feel this way. Let’s prepare for what’s coming."
+    ],
+    "tips": [
+      "List what’s *within* your control during the change.",
+      "Start with one small, new thing each day.",
+      "Remind yourself of past changes you’ve handled.",
+      "Practice self-soothing affirmations like 'I can handle this.'"
+    ]
+  },
+  {
+    "tag": "identity-crisis",
+    "patterns": [
+      "I don’t know who I am anymore",
+      "I feel lost in life",
+      "My sense of self is gone",
+      "I can’t recognize myself"
+    ],
+    "responses": [
+      "It’s okay to question who you are—self-discovery is part of growth.",
+      "Want to explore what parts of yourself feel missing or confusing?"
+    ],
+    "tips": [
+      "Journal about values and things that feel important to you.",
+      "Try new hobbies or experiences to learn about yourself.",
+      "Talk with others who’ve gone through similar phases.",
+      "Remember: Identity can evolve and that’s okay."
+    ]
+  },
+  {
+    "tag": "feeling-lonely",
+    "patterns": [
+      "I feel lonely",
+      "No one texts me anymore",
+      "I just want someone to talk to",
+      "It’s been a while since I hung out with someone"
+    ],
+    "responses": [
+      "Loneliness can feel rough. I'm here for you—want to chat about something?",
+      "You’re not alone in this. Sometimes, even saying it out loud helps."
+    ],
+    "tips": [
+      "Reach out to a friend, even with a simple 'Hey!'",
+      "Join an online or local group around your interests.",
+      "Go for a walk in a public place to feel less isolated.",
+      "Remember: your presence matters more than you think."
+    ]
+  },
+  {
+    "tag": "feeling-unmotivated",
+    "patterns": [
+      "I don’t feel like doing anything today",
+      "I’m feeling lazy",
+      "Nothing excites me lately",
+      "I just want to lie down all day"
+    ],
+    "responses": [
+      "That’s okay—rest is important too. Want to try one small thing together?",
+      "We all have off days. What’s one thing that *might* feel doable right now?"
+    ],
+    "tips": [
+      "Start with something super small—like brushing your teeth.",
+      "Listen to music that usually lifts your energy.",
+      "Don’t guilt yourself for slow days—they’re normal.",
+      "Make a 'done' list instead of a to-do list today."
+    ]
+  },
+  {
+    "tag": "sleep-trouble",
+    "patterns": [
+      "I can't sleep at night",
+      "My sleep is all over the place",
+      "I stay up thinking too much",
+      "I wake up feeling tired"
+    ],
+    "responses": [
+      "Sleep troubles can really mess with your energy. Want to talk about your routine?",
+      "Let’s explore a few ideas that might help your mind wind down."
+    ],
+    "tips": [
+      "Try staying off screens 30 minutes before bed.",
+      "Use a sleep sounds app or calming music.",
+      "Stick to a consistent sleep/wake schedule.",
+      "Write down your thoughts before bed to clear your mind."
+    ]
+  },
+  {
+    "tag": "boredom",
+    "patterns": [
+      "I’m bored",
+      "There’s nothing to do",
+      "I feel stuck in a loop",
+      "Everything feels the same lately"
+    ],
+    "responses": [
+      "Boredom can be a sign your brain needs a little spark. Want some ideas?",
+      "Let’s shake things up. What’s something new you’ve been curious about?"
+    ],
+    "tips": [
+      "Try a 10-minute challenge of learning something random.",
+      "Move your body—walk, dance, stretch!",
+      "Call a friend or play an online game.",
+      "Rearrange your room or space for a new vibe."
+    ]
+  },
+  {
+    "tag": "lack-confidence",
+    "patterns": [
+      "I don’t believe in myself",
+      "I always doubt my abilities",
+      "I feel like I’m not good enough",
+      "I second-guess everything I do"
+    ],
+    "responses": [
+      "Confidence takes time and practice. Let’s build it bit by bit.",
+      "You’ve got strengths—sometimes we just forget to see them."
+    ],
+    "tips": [
+      "Write down 3 things you did well today, even small ones.",
+      "Practice saying nice things to yourself out loud.",
+      "Remember: confidence comes from action, not waiting.",
+      "Take one brave step, even if it’s small."
+    ]
+  },
+  {
+    "tag": "comparison-trap",
+    "patterns": [
+      "Everyone else is doing better than me",
+      "I feel behind in life",
+      "I keep comparing myself to others",
+      "I wish I was more like them"
+    ],
+    "responses": [
+      "It’s easy to get caught in comparisons. Want to talk about what’s been on your mind?",
+      "You’re on your own timeline. Let’s appreciate your journey too."
+    ],
+    "tips": [
+      "Limit time on social media if it triggers you.",
+      "Focus on your own small wins and growth.",
+      "Celebrate others *and* yourself—both can exist.",
+      "You’re only seeing part of their story."
+    ]
+  },
+  {
+    "tag": "mood-swings",
+    "patterns": [
+      "My mood keeps changing",
+      "I feel fine one minute, then down the next",
+      "I get irritated easily lately",
+      "I don’t understand why I feel this way"
+    ],
+    "responses": [
+      "Mood swings can be frustrating. Let’s check in together.",
+      "You’re not broken—emotions can be messy sometimes, and that’s okay."
+    ],
+    "tips": [
+      "Track your mood to see patterns.",
+      "Sleep, food, and stress can all affect emotions—check in on those.",
+      "Try a calming ritual like journaling or stretching.",
+      "Talk to someone you trust when things feel shaky."
+    ]
+  },
+  {
+    "tag": "overthinking",
+    "patterns": [
+      "I overthink everything",
+      "My brain won’t stop racing",
+      "I keep replaying situations",
+      "I can’t stop worrying"
+    ],
+    "responses": [
+      "Overthinking can be exhausting. Want to slow things down together?",
+      "Let’s try grounding ourselves in the present. You’re doing okay."
+    ],
+    "tips": [
+      "Write your thoughts down to clear your mind.",
+      "Ask yourself: Will this matter a year from now?",
+      "Distract your brain with something creative or silly.",
+      "Try breathing exercises to calm racing thoughts."
+    ]
+  },
+  {
+    "tag": "feeling-unseen",
+    "patterns": [
+      "No one notices what I do",
+      "I feel invisible",
+      "I try so hard but no one appreciates me",
+      "I just want to be recognized"
+    ],
+    "responses": [
+      "You deserve to feel seen and valued. I see your effort.",
+      "Let’s talk about what you wish people noticed more."
+    ],
+    "tips": [
+      "Acknowledge your own efforts first—it counts.",
+      "Talk to someone about how you’re feeling.",
+      "Set boundaries if you’re being taken for granted.",
+      "Celebrate your wins privately—even if others don’t."
+    ]
+  },
+  {
+    "tag": "just-chat",
+    "patterns": [
+      "I just want to talk",
+      "Can we just chat for a bit?",
+      "Nothing serious, just here to chill",
+      "I’m feeling kind of meh"
+    ],
+    "responses": [
+      "Absolutely! I’m all ears. What’s on your mind?",
+      "No pressure—let’s chat about anything you like."
+    ],
+    "tips": [
+      "Sometimes just talking helps clear the fog.",
+      "Ask me anything—from fun facts to life thoughts.",
+      "Use this space to vent, explore, or just exist.",
+      "Even random convos can be surprisingly healing."
+    ]
+  },
+  {
+    "tag": "chat_about_day",
+    "patterns": [
+      "How was your day?",
+      "Tell me about your day",
+      "What did you do today?",
+      "How’s your day going?"
+    ],
+    "responses": [
+      "My day’s been good, thanks for asking! How about yours?",
+      "Every day’s a new adventure. What happened with you today?"
+    ],
+    "tips": [
+      "Reflect on one good thing that happened today.",
+      "Share your day with someone you trust."
+    ]
+  },
+  {
+    "tag": "hobby_share",
+    "patterns": [
+      "What are your hobbies?",
+      "Do you have any hobbies?",
+      "What do you like to do for fun?",
+      "Tell me about your interests"
+    ],
+    "responses": [
+      "I love learning new things! What hobbies do you enjoy?",
+      "Tell me about your favorite way to spend free time."
+    ],
+    "tips": [
+      "Try a new hobby this week.",
+      "Share your hobbies with friends."
+    ]
+  },
+  {
+    "tag": "music_talk",
+    "patterns": [
+      "What music do you like?",
+      "Do you listen to music?",
+      "What’s your favorite song?",
+      "Any music recommendations?"
+    ],
+    "responses": [
+      "I enjoy all kinds of music! What’s your favorite genre?",
+      "Music can lift your mood. What are you listening to lately?"
+    ],
+    "tips": [
+      "Create a playlist of your favorite songs.",
+      "Share music with a friend."
+    ]
+  },
+  {
+    "tag": "movie_chat",
+    "patterns": [
+      "Have you seen any good movies?",
+      "What’s your favorite movie?",
+      "Do you like movies?",
+      "Any movie recommendations?"
+    ],
+    "responses": [
+      "I love a good story! What’s your favorite movie?",
+      "Movies are great for relaxation. Seen anything good lately?"
+    ],
+    "tips": [
+      "Watch a movie with friends or family.",
+      "Try a new genre you haven’t explored."
+    ]
+  },
+  {
+    "tag": "book_talk",
+    "patterns": [
+      "Do you like reading?",
+      "What’s your favorite book?",
+      "Any book recommendations?",
+      "Are you reading anything now?"
+    ],
+    "responses": [
+      "Reading is a great escape! What’s your favorite book?",
+      "Books can inspire us. What are you reading these days?"
+    ],
+    "tips": [
+      "Start a new book this week.",
+      "Join a book club or share recommendations."
+    ]
+  },
+  {
+    "tag": "travel_talk",
+    "patterns": [
+      "Do you like to travel?",
+      "Where have you traveled?",
+      "What’s your dream destination?",
+      "Any travel tips?"
+    ],
+    "responses": [
+      "Travel is so exciting! Where would you like to go next?",
+      "Tell me about your favorite place you’ve visited."
+    ],
+    "tips": [
+      "Plan a small trip or day out.",
+      "Share travel stories with friends."
+    ]
+  },
+  {
+    "tag": "food_chat",
+    "patterns": [
+      "What’s your favorite food?",
+      "Do you like cooking?",
+      "Any recipe recommendations?",
+      "What did you eat today?"
+    ],
+    "responses": [
+      "Food is one of life’s joys! What’s your favorite dish?",
+      "Tell me about your favorite meal or recipe."
+    ],
+    "tips": [
+      "Try cooking something new.",
+      "Share a meal with someone you care about."
+    ]
+  },
+  {
+    "tag": "pet_talk",
+    "patterns": [
+      "Do you have any pets?",
+      "What’s your favorite animal?",
+      "Tell me about your pet",
+      "Do you like animals?"
+    ],
+    "responses": [
+      "Pets are wonderful companions! Do you have any?",
+      "Tell me about your favorite animal or pet."
+    ],
+    "tips": [
+      "Spend time with animals if you can.",
+      "Share pet stories with others."
+    ]
+  },
+  {
+    "tag": "sports_chat",
+    "patterns": [
+      "Do you like sports?",
+      "What’s your favorite sport?",
+      "Do you play any sports?",
+      "Did you watch the game?"
+    ],
+    "responses": [
+      "Sports are a great way to stay active! What’s your favorite?",
+      "Tell me about a sport you enjoy."
+    ],
+    "tips": [
+      "Try a new sport or physical activity.",
+      "Watch a game with friends."
+    ]
+  },
+  {
+    "tag": "tech_talk",
+    "patterns": [
+      "Do you like technology?",
+      "What’s your favorite gadget?",
+      "Any tech recommendations?",
+      "Are you into tech?"
+    ],
+    "responses": [
+      "Technology is fascinating! What gadget do you love most?",
+      "Tell me about your favorite tech or app."
+    ],
+    "tips": [
+      "Explore a new app or device.",
+      "Share tech tips with friends."
+    ]
+  },
+  {
+    "tag": "weather_chat",
+    "patterns": [
+      "How’s the weather?",
+      "What’s the weather like today?",
+      "Do you like sunny days?",
+      "How’s the weather where you are?"
+    ],
+    "responses": [
+      "Weather can really affect our mood! What’s it like for you today?",
+      "Tell me about your favorite kind of weather."
+    ],
+    "tips": [
+      "Enjoy the outdoors when the weather is nice.",
+      "Plan activities based on the forecast."
+    ]
+  },
+  {
+    "tag": "exercise_talk",
+    "patterns": [
+      "Do you exercise?",
+      "What’s your favorite workout?",
+      "How do you stay active?",
+      "Do you like going to the gym?"
+    ],
+    "responses": [
+      "Exercise is great for the mind and body! What’s your routine?",
+      "Tell me about your favorite way to stay active."
+    ],
+    "tips": [
+      "Try a new form of exercise.",
+      "Exercise with a friend for motivation."
+    ]
+  },
+  {
+    "tag": "fashion_talk",
+    "patterns": [
+      "Do you like fashion?",
+      "What’s your favorite outfit?",
+      "Any fashion tips?",
+      "What style do you like?"
+    ],
+    "responses": [
+      "Fashion is a fun way to express yourself! What’s your style?",
+      "Tell me about your favorite outfit or accessory."
+    ],
+    "tips": [
+      "Try a new look or accessory.",
+      "Share style tips with friends."
+    ]
+  },
+  {
+    "tag": "art_chat",
+    "patterns": [
+      "Do you like art?",
+      "What’s your favorite art style?",
+      "Do you create art?",
+      "Any art recommendations?"
+    ],
+    "responses": [
+      "Art is inspiring! What kind do you enjoy?",
+      "Tell me about your favorite artist or artwork."
+    ],
+    "tips": [
+      "Try drawing or painting something new.",
+      "Visit a gallery or museum."
+    ]
+  },
+  {
+    "tag": "gaming_talk",
+    "patterns": [
+      "Do you play video games?",
+      "What’s your favorite game?",
+      "Any game recommendations?",
+      "Are you into gaming?"
+    ],
+    "responses": [
+      "Games are a great way to relax! What’s your favorite?",
+      "Tell me about a game you enjoy."
+    ],
+    "tips": [
+      "Try a new game with friends.",
+      "Take breaks to avoid screen fatigue."
+    ]
+  },
+  {
+    "tag": "learning_talk",
+    "patterns": [
+      "Do you like learning new things?",
+      "What are you learning now?",
+      "Any learning tips?",
+      "What skills do you want to learn?"
+    ],
+    "responses": [
+      "Learning keeps life interesting! What are you exploring?",
+      "Tell me about something new you’ve learned."
+    ],
+    "tips": [
+      "Start learning a new skill.",
+      "Share what you learn with others."
+    ]
+  },
+  {
+    "tag": "joke_talk",
+    "patterns": [
+      "Tell me a joke",
+      "Do you know any jokes?",
+      "Make me laugh",
+      "I need a laugh"
+    ],
+    "responses": [
+      "Why did the computer go to therapy? It had too many bytes of emotional baggage!",
+      "Want to hear a joke? What do you call fake spaghetti? An impasta!"
+    ],
+    "tips": [
+      "Share a joke with a friend.",
+      "Laughter is great for your mood."
+    ]
+  },
+  {
+    "tag": "quote_talk",
+    "patterns": [
+      "Tell me a quote",
+      "Do you know any quotes?",
+      "Share an inspiring quote",
+      "I need motivation"
+    ],
+    "responses": [
+      "Here’s one: ‘The only limit to our realization of tomorrow is our doubts of today.’",
+      "How about: ‘Every day is a new beginning.’"
+    ],
+    "tips": [
+      "Write down quotes that inspire you.",
+      "Share quotes with friends."
+    ]
+  },
+  {
+    "tag": "dream_chat",
+    "patterns": [
+      "What’s your dream?",
+      "What do you dream about?",
+      "Tell me about your dreams",
+      "Do you remember your dreams?"
+    ],
+    "responses": [
+      "Dreams can be fascinating! What’s a dream you’ve had?",
+      "Tell me about a dream or goal you have."
+    ],
+    "tips": [
+      "Write down your dreams or goals.",
+      "Talk about your dreams with someone you trust."
+    ]
+  },
+  {
+    "tag": "memory_talk",
+    "patterns": [
+      "What’s your favorite memory?",
+      "Tell me a memory",
+      "Do you remember when...?",
+      "Share a happy memory"
+    ],
+    "responses": [
+      "Memories are precious! What’s your favorite?",
+      "Tell me about a happy memory you have."
+    ],
+    "tips": [
+      "Share your memories with friends.",
+      "Write down special moments."
+    ]
+  },
+  {
+    "tag": "future_talk",
+    "patterns": [
+      "What do you want to do in the future?",
+      "What are your plans?",
+      "Where do you see yourself in 5 years?",
+      "Tell me about your future"
+    ],
+    "responses": [
+      "The future is full of possibilities! What are you looking forward to?",
+      "Tell me about your goals or plans."
+    ],
+    "tips": [
+      "Set small goals for the future.",
+      "Visualize your ideal future."
+    ]
+  },
+  {
+    "tag": "friend_talk",
+    "patterns": [
+      "Tell me about your friends",
+      "Who is your best friend?",
+      "What do you look for in a friend?",
+      "Do you have good friends?"
+    ],
+    "responses": [
+      "Friends are so important! Tell me about your friends.",
+      "What do you value most in a friendship?"
+    ],
+    "tips": [
+      "Reach out to a friend today.",
+      "Show appreciation for your friends."
+    ]
+  },
+  {
+    "tag": "family_chat",
+    "patterns": [
+      "Tell me about your family",
+      "Who is in your family?",
+      "What do you like about your family?",
+      "Do you have siblings?"
+    ],
+    "responses": [
+      "Family is special! Tell me about yours.",
+      "What’s your favorite family memory?"
+    ],
+    "tips": [
+      "Spend time with family if you can.",
+      "Share a story about your family."
+    ]
+  },
+  {
+    "tag": "school_talk",
+    "patterns": [
+      "How is school?",
+      "What are you studying?",
+      "Do you like school?",
+      "Tell me about your classes"
+    ],
+    "responses": [
+      "School can be challenging but rewarding! How’s it going?",
+      "Tell me about your favorite subject."
+    ],
+    "tips": [
+      "Ask for help if you need it.",
+      "Study with friends."
+    ]
+  },
+  {
+    "tag": "work_chat",
+    "patterns": [
+      "How is work?",
+      "What do you do for work?",
+      "Do you like your job?",
+      "Tell me about your job"
+    ],
+    "responses": [
+      "Work is a big part of life! How’s it going?",
+      "Tell me about your job or career."
+    ],
+    "tips": [
+      "Take breaks to avoid burnout.",
+      "Celebrate your achievements at work."
+    ]
+  },
+  {
+    "tag": "weekend_plans",
+    "patterns": [
+      "What are you doing this weekend?",
+      "Any weekend plans?",
+      "How was your weekend?",
+      "Tell me about your weekend"
+    ],
+    "responses": [
+      "Weekends are for relaxing! What are your plans?",
+      "Tell me about your last weekend."
+    ],
+    "tips": [
+      "Plan something fun for the weekend.",
+      "Take time to relax and recharge."
+    ]
+  },
+  {
+    "tag": "holiday_chat",
+    "patterns": [
+      "What’s your favorite holiday?",
+      "How do you celebrate holidays?",
+      "Do you like holidays?",
+      "Tell me about your holiday traditions"
+    ],
+    "responses": [
+      "Holidays are special! What’s your favorite?",
+      "Tell me about your holiday traditions."
+    ],
+    "tips": [
+      "Celebrate holidays with loved ones.",
+      "Start a new holiday tradition."
+    ]
+  },
+  {
+    "tag": "birthday_talk",
+    "patterns": [
+      "When is your birthday?",
+      "How do you celebrate your birthday?",
+      "Do you like birthdays?",
+      "Tell me about your birthday"
+    ],
+    "responses": [
+      "Birthdays are a time to celebrate! How do you like to celebrate?",
+      "Tell me about your favorite birthday memory."
+    ],
+    "tips": [
+      "Make someone’s birthday special.",
+      "Reflect on your own birthday wishes."
+    ]
+  },
+  {
+    "tag": "vacation_chat",
+    "patterns": [
+      "Where do you want to go on vacation?",
+      "What’s your dream vacation?",
+      "Do you like vacations?",
+      "Tell me about your last vacation"
+    ],
+    "responses": [
+      "Vacations are a great way to relax! Where would you like to go?",
+      "Tell me about your favorite vacation."
+    ],
+    "tips": [
+      "Plan a small getaway if you can.",
+      "Share vacation stories with friends."
+    ]
+  },
+  {
+    "tag": "home_chat",
+    "patterns": [
+      "Tell me about your home",
+      "Where do you live?",
+      "What do you like about your home?",
+      "Do you like your home?"
+    ],
+    "responses": [
+      "Home is where the heart is! Tell me about yours.",
+      "What’s your favorite part of your home?"
+    ],
+    "tips": [
+      "Make your home cozy and comfortable.",
+      "Invite friends over for a visit."
+    ]
+  },
+  {
+    "tag": "city_talk",
+    "patterns": [
+      "Where do you live?",
+      "What’s your favorite city?",
+      "Do you like your city?",
+      "Tell me about your city"
+    ],
+    "responses": [
+      "Cities are full of life! What do you like about your city?",
+      "Tell me about your favorite place in your city."
+    ],
+    "tips": [
+      "Explore new places in your city.",
+      "Share your city’s highlights with others."
+    ]
+  },
+  {
+    "tag": "country_talk",
+    "patterns": [
+      "Where are you from?",
+      "What’s your favorite country?",
+      "Do you like your country?",
+      "Tell me about your country"
+    ],
+    "responses": [
+      "Countries have unique cultures! What do you like about yours?",
+      "Tell me about your favorite place in your country."
+    ],
+    "tips": [
+      "Learn about other cultures.",
+      "Share your country’s traditions."
+    ]
+  },
+  {
+    "tag": "language_talk",
+    "patterns": [
+      "What languages do you speak?",
+      "Do you know any other languages?",
+      "Are you learning a language?",
+      "Tell me about languages"
+    ],
+    "responses": [
+      "Languages connect us! What languages do you speak?",
+      "Tell me about your language learning journey."
+    ],
+    "tips": [
+      "Try learning a new language.",
+      "Practice with native speakers."
+    ]
+  },
+  {
+    "tag": "culture_chat",
+    "patterns": [
+      "What’s your culture?",
+      "Tell me about your culture",
+      "Do you like learning about other cultures?",
+      "What cultural traditions do you have?"
+    ],
+    "responses": [
+      "Culture is fascinating! What’s unique about yours?",
+      "Tell me about your favorite cultural tradition."
+    ],
+    "tips": [
+      "Explore other cultures.",
+      "Share your culture with others."
+    ]
+  },
+  {
+    "tag": "food_culture",
+    "patterns": [
+      "What’s your favorite cultural food?",
+      "Tell me about food from your culture",
+      "Do you like trying new foods?",
+      "What food represents your culture?"
+    ],
+    "responses": [
+      "Food tells a story! What’s a dish from your culture?",
+      "Tell me about your favorite cultural meal."
+    ],
+    "tips": [
+      "Try a new cultural dish.",
+      "Share your favorite food with friends."
+    ]
+  },
+  {
+    "tag": "festival_chat",
+    "patterns": [
+      "What’s your favorite festival?",
+      "Tell me about a festival",
+      "Do you celebrate festivals?",
+      "What festival do you like?"
+    ],
+    "responses": [
+      "Festivals are so much fun! What’s your favorite?",
+      "Tell me about a festival you enjoy."
+    ],
+    "tips": [
+      "Celebrate festivals with friends and family.",
+      "Learn about festivals from other cultures."
+    ]
+  },
+  {
+    "tag": "music_festival",
+    "patterns": [
+      "Have you been to a music festival?",
+      "What’s your favorite music festival?",
+      "Do you like music festivals?",
+      "Tell me about a music festival"
+    ],
+    "responses": [
+      "Music festivals are a blast! Have you been to one?",
+      "Tell me about your favorite music festival experience."
+    ],
+    "tips": [
+      "Attend a music festival if you can.",
+      "Share festival memories with friends."
+    ]
+  },
+  {
+    "tag": "concert_talk",
+    "patterns": [
+      "Have you been to a concert?",
+      "What’s your favorite concert?",
+      "Do you like concerts?",
+      "Tell me about a concert"
+    ],
+    "responses": [
+      "Concerts are unforgettable! Have you been to one?",
+      "Tell me about your favorite concert."
+    ],
+    "tips": [
+      "Go to a concert with friends.",
+      "Share your concert experiences."
+    ]
+  },
+  {
+    "tag": "theater_chat",
+    "patterns": [
+      "Have you been to the theater?",
+      "What’s your favorite play?",
+      "Do you like theater?",
+      "Tell me about a play"
+    ],
+    "responses": [
+      "Theater is magical! Have you seen a play?",
+      "Tell me about your favorite theater experience."
+    ],
+    "tips": [
+      "Attend a play or musical.",
+      "Share your theater stories with friends."
+    ]
+  },
+  {
+    "tag": "museum_chat",
+    "patterns": [
+      "Have you been to a museum?",
+      "What’s your favorite museum?",
+      "Do you like museums?",
+      "Tell me about a museum"
+    ],
+    "responses": [
+      "Museums are inspiring! Have you visited one?",
+      "Tell me about your favorite museum."
+    ],
+    "tips": [
+      "Visit a museum this weekend.",
+      "Share your museum experiences with friends."
+    ]
+  },
+  {
+    "tag": "art_gallery",
+    "patterns": [
+      "Have you been to an art gallery?",
+      "What’s your favorite art gallery?",
+      "Do you like art galleries?",
+      "Tell me about an art gallery"
+    ],
+    "responses": [
+      "Art galleries are fascinating! Have you visited one?",
+      "Tell me about your favorite art gallery."
+    ],
+    "tips": [
+      "Explore a new art gallery.",
+      "Share your art gallery experiences."
+    ]
+  },
+  {
+    "tag": "park_chat",
+    "patterns": [
+      "Do you like parks?",
+      "What’s your favorite park?",
+      "Have you been to a park?",
+      "Tell me about a park"
+    ],
+    "responses": [
+      "Parks are great for relaxing! What’s your favorite?",
+      "Tell me about your favorite park experience."
+    ],
+    "tips": [
+      "Take a walk in a park.",
+      "Invite friends to join you."
+    ]
+  },
+  {
+    "tag": "beach_talk",
+    "patterns": [
+      "Do you like the beach?",
+      "What’s your favorite beach?",
+      "Have you been to the beach?",
+      "Tell me about the beach"
+    ],
+    "responses": [
+      "Beaches are so relaxing! What’s your favorite?",
+      "Tell me about your favorite beach memory."
+    ],
+    "tips": [
+      "Plan a beach day if you can.",
+      "Share your beach stories with friends."
+    ]
+  },
+  {
+    "tag": "mountain_chat",
+    "patterns": [
+      "Do you like mountains?",
+      "What’s your favorite mountain?",
+      "Have you been to the mountains?",
+      "Tell me about the mountains"
+    ],
+    "responses": [
+      "Mountains are majestic! What’s your favorite?",
+      "Tell me about your favorite mountain experience."
+    ],
+    "tips": [
+      "Go hiking in the mountains if you can.",
+      "Share your mountain stories with friends."
+    ]
+  },
+  {
+    "tag": "nature_chat",
+    "patterns": [
+      "Do you like nature?",
+      "What’s your favorite place in nature?",
+      "How do you enjoy nature?",
+      "Tell me about nature"
+    ],
+    "responses": [
+      "Nature is calming! What’s your favorite place?",
+      "Tell me about your favorite nature experience."
+    ],
+    "tips": [
+      "Spend time in nature this week.",
+      "Share your nature stories with friends."
+    ]
+  },
+  {
+    "tag": "camping_talk",
+    "patterns": [
+      "Have you been camping?",
+      "What’s your favorite camping trip?",
+      "Do you like camping?",
+      "Tell me about camping"
+    ],
+    "responses": [
+      "Camping is an adventure! Have you been?",
+      "Tell me about your favorite camping experience."
+    ],
+    "tips": [
+      "Plan a camping trip with friends.",
+      "Share your camping stories."
+    ]
+  },
+  {
+    "tag": "hiking_chat",
+    "patterns": [
+      "Do you like hiking?",
+      "What’s your favorite hike?",
+      "Have you been hiking?",
+      "Tell me about hiking"
+    ],
+    "responses": [
+      "Hiking is great exercise! What’s your favorite trail?",
+      "Tell me about your favorite hiking memory."
+    ],
+    "tips": [
+      "Go hiking with friends.",
+      "Share your hiking experiences."
+    ]
+  },
+  {
+    "tag": "biking_talk",
+    "patterns": [
+      "Do you like biking?",
+      "What’s your favorite bike ride?",
+      "Have you been biking?",
+      "Tell me about biking"
+    ],
+    "responses": [
+      "Biking is fun and healthy! What’s your favorite ride?",
+      "Tell me about your favorite biking memory."
+    ],
+    "tips": [
+      "Go for a bike ride this weekend.",
+      "Invite friends to join you."
+    ]
+  },
+  {
+    "tag": "swimming_chat",
+    "patterns": [
+      "Do you like swimming?",
+      "What’s your favorite place to swim?",
+      "Have you been swimming?",
+      "Tell me about swimming"
+    ],
+    "responses": [
+      "Swimming is refreshing! What’s your favorite place?",
+      "Tell me about your favorite swimming memory."
+    ],
+    "tips": [
+      "Go swimming if you can.",
+      "Share your swimming stories with friends."
+    ]
+  },
+  {
+    "tag": "sports_team",
+    "patterns": [
+      "What’s your favorite sports team?",
+      "Do you support a team?",
+      "Tell me about your team",
+      "Are you a fan of any team?"
+    ],
+    "responses": [
+      "Sports teams bring people together! What’s your favorite?",
+      "Tell me about your favorite team."
+    ],
+    "tips": [
+      "Watch a game with friends.",
+      "Show your team spirit."
+    ]
+  },
+  {
+    "tag": "fitness_goal",
+    "patterns": [
+      "What’s your fitness goal?",
+      "Do you have fitness goals?",
+      "Tell me about your fitness",
+      "Are you working on fitness?"
+    ],
+    "responses": [
+      "Fitness goals are motivating! What are you working toward?",
+      "Tell me about your fitness journey."
+    ],
+    "tips": [
+      "Set small, achievable fitness goals.",
+      "Celebrate your progress."
+    ]
+  },
+  {
+    "tag": "health_talk",
+    "patterns": [
+      "How is your health?",
+      "Do you take care of your health?",
+      "Tell me about your health",
+      "Are you healthy?"
+    ],
+    "responses": [
+      "Health is important! How are you feeling?",
+      "Tell me about your health habits."
+    ],
+    "tips": [
+      "Prioritize your health and well-being.",
+      "Share health tips with friends."
+    ]
+  },
+  {
+    "tag": "mindfulness_chat",
+    "patterns": [
+      "Do you practice mindfulness?",
+      "What’s your mindfulness routine?",
+      "Tell me about mindfulness",
+      "Are you mindful?"
+    ],
+    "responses": [
+      "Mindfulness is great for mental health! Do you practice it?",
+      "Tell me about your mindfulness journey."
+    ],
+    "tips": [
+      "Try a mindfulness exercise today.",
+      "Share mindfulness tips with friends."
+    ]
+  },
+  {
+    "tag": "meditation_talk",
+    "patterns": [
+      "Do you meditate?",
+      "What’s your meditation routine?",
+      "Tell me about meditation",
+      "Are you into meditation?"
+    ],
+    "responses": [
+      "Meditation is calming! Do you practice it?",
+      "Tell me about your meditation experience."
+    ],
+    "tips": [
+      "Try meditating for a few minutes.",
+      "Share your meditation tips with friends."
+    ]
+  },
+  {
+    "tag": "sleep_chat",
+    "patterns": [
+      "How is your sleep?",
+      "Do you get enough sleep?",
+      "Tell me about your sleep",
+      "Are you sleeping well?"
+    ],
+    "responses": [
+      "Sleep is so important! How are you sleeping?",
+      "Tell me about your sleep habits."
+    ],
+    "tips": [
+      "Stick to a regular sleep schedule.",
+      "Share sleep tips with friends."
+    ]
+  },
+  {
+    "tag": "morning_greeting",
+    "patterns": [
+      "Good morning",
+      "Morning!",
+      "Hi, good morning",
+      "Hello, good morning",
+      "Rise and shine"
+    ],
+    "responses": [
+      "Good morning! How are you today?",
+      "Morning! Ready for a new day?",
+      "Hello! Hope you have a great morning."
+    ],
+    "tips": [
+      "Start your day with a smile.",
+      "Greet someone you care about."
+    ]
+  },
+  {
+    "tag": "afternoon_greeting",
+    "patterns": [
+      "Good afternoon",
+      "Afternoon!",
+      "Hi, good afternoon",
+      "Hello, good afternoon",
+      "How’s your afternoon?"
+    ],
+    "responses": [
+      "Good afternoon! How’s your day going?",
+      "Afternoon! Hope you’re having a good one.",
+      "Hello! How’s your afternoon so far?"
+    ],
+    "tips": [
+      "Take a break and enjoy your afternoon.",
+      "Send a friendly message to someone."
+    ]
+  },
+  {
+    "tag": "evening_greeting",
+    "patterns": [
+      "Good evening",
+      "Evening!",
+      "Hi, good evening",
+      "Hello, good evening",
+      "How’s your evening?"
+    ],
+    "responses": [
+      "Good evening! How are you feeling?",
+      "Evening! Hope you’re relaxing.",
+      "Hello! Enjoy your evening."
+    ],
+    "tips": [
+      "Wind down and enjoy your evening.",
+      "Check in with a friend."
+    ]
+  },
+  {
+    "tag": "night_greeting",
+    "patterns": [
+      "Good night",
+      "Night!",
+      "Hi, good night",
+      "Hello, good night",
+      "Sweet dreams"
+    ],
+    "responses": [
+      "Good night! Sleep well.",
+      "Night! Have a restful sleep.",
+      "Sweet dreams! See you tomorrow."
+    ],
+    "tips": [
+      "Wish someone a good night.",
+      "Prepare for a restful sleep."
+    ]
+  },
+  {
+    "tag": "casual_hello",
+    "patterns": [
+      "Hey there",
+      "Hey!",
+      "Hey, how are you?",
+      "Hey, what’s up?",
+      "Hey, how’s it going?"
+    ],
+    "responses": [
+      "Hey there! How can I help you?",
+      "Hey! What’s on your mind?",
+      "Hey! How’s your day going?"
+    ],
+    "tips": [
+      "A casual hello can brighten someone’s day.",
+      "Start a friendly conversation."
+    ]
+  },
+  {
+    "tag": "formal_hello",
+    "patterns": [
+      "Hello",
+      "Hello, how are you?",
+      "Hello, nice to meet you",
+      "Hello, it’s a pleasure",
+      "Hello, how do you do?"
+    ],
+    "responses": [
+      "Hello! How can I assist you today?",
+      "Hello! Nice to meet you.",
+      "Hello! It’s a pleasure to chat."
+    ],
+    "tips": [
+      "A formal hello is great for new conversations.",
+      "Make a good first impression."
+    ]
+  },
+  {
+    "tag": "hi_there",
+    "patterns": [
+      "Hi there",
+      "Hi!",
+      "Hi, how are you?",
+      "Hi, what’s up?",
+      "Hi, how’s it going?"
+    ],
+    "responses": [
+      "Hi there! How can I help you?",
+      "Hi! What’s on your mind?",
+      "Hi! How’s your day going?"
+    ],
+    "tips": [
+      "A simple hi can start a great conversation.",
+      "Greet someone with a smile."
+    ]
+  },
+  {
+    "tag": "warm_welcome",
+    "patterns": [
+      "Welcome",
+      "Welcome back",
+      "Welcome, friend",
+      "Welcome, how are you?",
+      "Welcome, it’s great to see you"
+    ],
+    "responses": [
+      "Welcome! How can I help you today?",
+      "Welcome back! How have you been?",
+      "Welcome, friend! Nice to see you."
+    ],
+    "tips": [
+      "Make someone feel welcome.",
+      "Start conversations with a warm welcome."
+    ]
+  },
+  {
+    "tag": "cheerful_greeting",
+    "patterns": [
+      "Hey, sunshine!",
+      "Hi, sunshine!",
+      "Hello, sunshine!",
+      "Good to see you, sunshine!",
+      "Rise and shine, sunshine!"
+    ],
+    "responses": [
+      "Hey, sunshine! How are you today?",
+      "Hi, sunshine! Ready to brighten the day?",
+      "Hello, sunshine! Nice to see you."
+    ],
+    "tips": [
+      "Spread positivity with a cheerful greeting.",
+      "Brighten someone’s day."
+    ]
+  },
+  {
+    "tag": "friendly_hello",
+    "patterns": [
+      "Hello, friend",
+      "Hi, friend",
+      "Hey, friend",
+      "Greetings, friend",
+      "Nice to see you, friend"
+    ],
+    "responses": [
+      "Hello, friend! How are you?",
+      "Hi, friend! What’s new?",
+      "Hey, friend! How’s your day?"
+    ],
+    "tips": [
+      "Make someone feel like a friend.",
+      "Start conversations with warmth."
+    ]
+  },
+  {
+    "tag": "happy_greeting",
+    "patterns": [
+      "Happy to see you",
+      "So happy to see you",
+      "I’m happy to see you",
+      "Glad to see you",
+      "It’s great to see you"
+    ],
+    "responses": [
+      "Happy to see you! How are you?",
+      "So happy to see you! What’s new?",
+      "Glad to see you! How’s your day?"
+    ],
+    "tips": [
+      "Express happiness when greeting someone.",
+      "Make someone feel valued."
+    ]
+  },
+  {
+    "tag": "howdy_hello",
+    "patterns": [
+      "Howdy",
+      "Howdy, partner",
+      "Howdy, how are you?",
+      "Howdy, what’s up?",
+      "Howdy, friend"
+    ],
+    "responses": [
+      "Howdy! How can I help you?",
+      "Howdy, partner! What’s on your mind?",
+      "Howdy! How’s your day going?"
+    ],
+    "tips": [
+      "A fun, informal greeting.",
+      "Bring a smile to someone’s face."
+    ]
+  },
+  {
+    "tag": "greetings_around_the_world",
+    "patterns": [
+      "Bonjour",
+      "Hola",
+      "Ciao",
+      "Namaste",
+      "Konnichiwa"
+    ],
+    "responses": [
+      "Bonjour! Comment ça va?",
+      "Hola! ¿Cómo estás?",
+      "Ciao! Come stai?",
+      "Namaste! How are you?",
+      "Konnichiwa! Genki desu ka?"
+    ],
+    "tips": [
+      "Learn greetings in different languages.",
+      "Surprise someone with an international hello."
+    ]
+  },
+  {
+    "tag": "welcome_back",
+    "patterns": [
+      "Welcome back",
+      "Great to have you back",
+      "Glad you’re back",
+      "Nice to see you again",
+      "Back so soon?"
+    ],
+    "responses": [
+      "Welcome back! How have you been?",
+      "Great to have you back! What’s new?",
+      "Glad you’re back! How’s your day?"
+    ],
+    "tips": [
+      "Make someone feel appreciated.",
+      "Welcome returning users warmly."
+    ]
+  },
+  {
+    "tag": "long_time_no_see",
+    "patterns": [
+      "Long time no see",
+      "It’s been a while",
+      "Haven’t seen you in ages",
+      "Where have you been?",
+      "Missed you!"
+    ],
+    "responses": [
+      "Long time no see! How have you been?",
+      "It’s been a while! What’s new?",
+      "Missed you! How’s your day?"
+    ],
+    "tips": [
+      "Reconnect with old friends.",
+      "Show you care about someone’s return."
+    ]
+  },
+  {
+    "tag": "happy_monday",
+    "patterns": [
+      "Happy Monday",
+      "Good morning, Monday",
+      "Hello, Monday",
+      "Hope your Monday is great",
+      "Monday vibes"
+    ],
+    "responses": [
+      "Happy Monday! Ready for the week?",
+      "Good morning, Monday! How are you?",
+      "Hello, Monday! Hope you have a great start."
+    ],
+    "tips": [
+      "Start the week with positivity.",
+      "Encourage someone for the week ahead."
+    ]
+  },
+  {
+    "tag": "happy_tuesday",
+    "patterns": [
+      "Happy Tuesday",
+      "Good morning, Tuesday",
+      "Hello, Tuesday",
+      "Hope your Tuesday is great",
+      "Tuesday vibes"
+    ],
+    "responses": [
+      "Happy Tuesday! How’s your week going?",
+      "Good morning, Tuesday! How are you?",
+      "Hello, Tuesday! Hope you have a great day."
+    ],
+    "tips": [
+      "Keep the week going strong.",
+      "Share a positive message."
+    ]
+  },
+  {
+    "tag": "happy_wednesday",
+    "patterns": [
+      "Happy Wednesday",
+      "Good morning, Wednesday",
+      "Hello, Wednesday",
+      "Hope your Wednesday is great",
+      "Wednesday vibes"
+    ],
+    "responses": [
+      "Happy Wednesday! Halfway through the week!",
+      "Good morning, Wednesday! How are you?",
+      "Hello, Wednesday! Hope you have a great day."
+    ],
+    "tips": [
+      "Celebrate the middle of the week.",
+      "Encourage someone to keep going."
+    ]
+  },
+  {
+    "tag": "happy_thursday",
+    "patterns": [
+      "Happy Thursday",
+      "Good morning, Thursday",
+      "Hello, Thursday",
+      "Hope your Thursday is great",
+      "Thursday vibes"
+    ],
+    "responses": [
+      "Happy Thursday! Almost the weekend!",
+      "Good morning, Thursday! How are you?",
+      "Hello, Thursday! Hope you have a great day."
+    ],
+    "tips": [
+      "Look forward to the weekend.",
+      "Share some encouragement."
+    ]
+  },
+  {
+    "tag": "happy_friday",
+    "patterns": [
+      "Happy Friday",
+      "Good morning, Friday",
+      "Hello, Friday",
+      "Hope your Friday is great",
+      "Friday vibes"
+    ],
+    "responses": [
+      "Happy Friday! Ready for the weekend?",
+      "Good morning, Friday! How are you?",
+      "Hello, Friday! Hope you have a great day."
+    ],
+    "tips": [
+      "Celebrate the end of the week.",
+      "Plan something fun for the weekend."
+    ]
+  },
+  {
+    "tag": "happy_weekend",
+    "patterns": [
+      "Happy weekend",
+      "Good morning, weekend",
+      "Hello, weekend",
+      "Hope your weekend is great",
+      "Weekend vibes"
+    ],
+    "responses": [
+      "Happy weekend! Any plans?",
+      "Good morning, weekend! How are you?",
+      "Hello, weekend! Enjoy your time off."
+    ],
+    "tips": [
+      "Relax and enjoy your weekend.",
+      "Check in with friends."
+    ]
+  },
+  {
+    "tag": "happy_hour",
+    "patterns": [
+      "Happy hour",
+      "Time for happy hour",
+      "Let’s do happy hour",
+      "Cheers to happy hour",
+      "Enjoy happy hour"
+    ],
+    "responses": [
+      "Happy hour! Time to relax.",
+      "Time for happy hour! Enjoy!",
+      "Cheers to happy hour! How’s your day?"
+    ],
+    "tips": [
+      "Take a break and enjoy some downtime.",
+      "Invite friends for a virtual happy hour."
+    ]
+  },
+  {
+    "tag": "holiday_hello",
+    "patterns": [
+      "Happy holidays",
+      "Merry Christmas",
+      "Happy New Year",
+      "Happy Easter",
+      "Happy Thanksgiving"
+    ],
+    "responses": [
+      "Happy holidays! How are you celebrating?",
+      "Merry Christmas! Enjoy the season.",
+      "Happy New Year! Any resolutions?"
+    ],
+    "tips": [
+      "Share holiday cheer.",
+      "Celebrate with loved ones."
+    ]
+  },
+  {
+    "tag": "birthday_greeting",
+    "patterns": [
+      "Happy birthday",
+      "Happy birthday to you",
+      "Have a great birthday",
+      "Wishing you a happy birthday",
+      "Hope your birthday is wonderful"
+    ],
+    "responses": [
+      "Happy birthday! How are you celebrating?",
+      "Happy birthday to you! Enjoy your day.",
+      "Wishing you a happy birthday!"
+    ],
+    "tips": [
+      "Make someone’s birthday special.",
+      "Send a birthday message."
+    ]
+  },
+  {
+    "tag": "anniversary_greeting",
+    "patterns": [
+      "Happy anniversary",
+      "Happy anniversary to you",
+      "Have a great anniversary",
+      "Wishing you a happy anniversary",
+      "Hope your anniversary is wonderful"
+    ],
+    "responses": [
+      "Happy anniversary! How are you celebrating?",
+      "Happy anniversary to you! Enjoy your day.",
+      "Wishing you a happy anniversary!"
+    ],
+    "tips": [
+      "Celebrate milestones.",
+      "Send an anniversary message."
+    ]
+  },
+  {
+    "tag": "congratulations_hello",
+    "patterns": [
+      "Congratulations",
+      "Congrats",
+      "Way to go",
+      "Great job",
+      "Well done"
+    ],
+    "responses": [
+      "Congratulations! What are you celebrating?",
+      "Congrats! How do you feel?",
+      "Way to go! What did you achieve?"
+    ],
+    "tips": [
+      "Celebrate achievements.",
+      "Share a congratulatory message."
+    ]
+  },
+  {
+    "tag": "new_year_hello",
+    "patterns": [
+      "Happy New Year",
+      "Happy New Year to you",
+      "Have a great New Year",
+      "Wishing you a happy New Year",
+      "Hope your New Year is wonderful"
+    ],
+    "responses": [
+      "Happy New Year! Any resolutions?",
+      "Happy New Year to you! How are you celebrating?",
+      "Wishing you a happy New Year!"
+    ],
+    "tips": [
+      "Start the year with positivity.",
+      "Share your goals with friends."
+    ]
+  },
+  {
+    "tag": "spring_greeting",
+    "patterns": [
+      "Happy spring",
+      "Hello, spring",
+      "Welcome, spring",
+      "Hope your spring is great",
+      "Spring is here"
+    ],
+    "responses": [
+      "Happy spring! How are you enjoying the season?",
+      "Hello, spring! What are you looking forward to?",
+      "Welcome, spring! Hope you have a great season."
+    ],
+    "tips": [
+      "Enjoy the fresh start of spring.",
+      "Plan something fun outdoors."
+    ]
+  },
+  {
+    "tag": "summer_greeting",
+    "patterns": [
+      "Happy summer",
+      "Hello, summer",
+      "Welcome, summer",
+      "Hope your summer is great",
+      "Summer is here"
+    ],
+    "responses": [
+      "Happy summer! How are you enjoying the season?",
+      "Hello, summer! What are you looking forward to?",
+      "Welcome, summer! Hope you have a great season."
+    ],
+    "tips": [
+      "Make the most of summer.",
+      "Plan outdoor activities."
+    ]
+  },
+  {
+    "tag": "fall_greeting",
+    "patterns": [
+      "Happy fall",
+      "Hello, fall",
+      "Welcome, fall",
+      "Hope your fall is great",
+      "Fall is here"
+    ],
+    "responses": [
+      "Happy fall! How are you enjoying the season?",
+      "Hello, fall! What are you looking forward to?",
+      "Welcome, fall! Hope you have a great season."
+    ],
+    "tips": [
+      "Enjoy the cozy vibes of fall.",
+      "Try a new fall activity."
+    ]
+  },
+  {
+    "tag": "winter_greeting",
+    "patterns": [
+      "Happy winter",
+      "Hello, winter",
+      "Welcome, winter",
+      "Hope your winter is great",
+      "Winter is here"
+    ],
+    "responses": [
+      "Happy winter! How are you enjoying the season?",
+      "Hello, winter! What are you looking forward to?",
+      "Welcome, winter! Hope you have a great season."
+    ],
+    "tips": [
+      "Stay cozy and warm.",
+      "Plan fun winter activities."
+    ]
+  },
+  {
+    "tag": "weekend_welcome",
+    "patterns": [
+      "Welcome to the weekend",
+      "Hello, weekend",
+      "It’s the weekend",
+      "Enjoy your weekend",
+      "Weekend is here"
+    ],
+    "responses": [
+      "Welcome to the weekend! Any plans?",
+      "Hello, weekend! How are you feeling?",
+      "Enjoy your weekend! What are you up to?"
+    ],
+    "tips": [
+      "Relax and recharge.",
+      "Invite friends to join you."
+    ]
+  },
+  {
+    "tag": "monday_motivation",
+    "patterns": [
+      "Monday motivation",
+      "Let’s start the week strong",
+      "Ready for Monday?",
+      "Monday energy",
+      "Let’s do this, Monday"
+    ],
+    "responses": [
+      "Monday motivation! What are your goals?",
+      "Let’s start the week strong! How can I help?",
+      "Ready for Monday? You’ve got this!"
+    ],
+    "tips": [
+      "Set intentions for the week.",
+      "Encourage someone to start strong."
+    ]
+  },
+  {
+    "tag": "friday_feeling",
+    "patterns": [
+      "Friday feeling",
+      "TGIF",
+      "Thank goodness it’s Friday",
+      "Friday mood",
+      "Ready for the weekend?"
+    ],
+    "responses": [
+      "Friday feeling! Any plans?",
+      "TGIF! How are you celebrating?",
+      "Ready for the weekend? Enjoy!"
+    ],
+    "tips": [
+      "Celebrate the end of the week.",
+      "Plan something fun for the weekend."
+    ]
+  },
+  {
+    "tag": "sunny_greeting",
+    "patterns": [
+      "Hello, sunshine",
+      "Good morning, sunshine",
+      "Hey, sunshine",
+      "Nice to see you, sunshine",
+      "Rise and shine, sunshine"
+    ],
+    "responses": [
+      "Hello, sunshine! How are you today?",
+      "Good morning, sunshine! Ready to brighten the day?",
+      "Nice to see you, sunshine!"
+    ],
+    "tips": [
+      "Spread positivity with a sunny greeting.",
+      "Brighten someone’s day."
+    ]
+  },
+  {
+    "tag": "rainy_greeting",
+    "patterns": [
+      "Hello, rainy day",
+      "Good morning, rain",
+      "Hey, rainy day",
+      "Nice to see you, rain",
+      "Stay dry!"
+    ],
+    "responses": [
+      "Hello, rainy day! How are you feeling?",
+      "Good morning, rain! Ready for a cozy day?",
+      "Stay dry! Hope you’re staying warm."
+    ],
+    "tips": [
+      "Enjoy a cozy day indoors.",
+      "Send a warm message to someone."
+    ]
+  },
+  {
+    "tag": "snowy_greeting",
+    "patterns": [
+      "Hello, snowy day",
+      "Good morning, snow",
+      "Hey, snowy day",
+      "Nice to see you, snow",
+      "Stay warm!"
+    ],
+    "responses": [
+      "Hello, snowy day! How are you feeling?",
+      "Good morning, snow! Ready for a cozy day?",
+      "Stay warm! Hope you’re enjoying the snow."
+    ],
+    "tips": [
+      "Enjoy a cozy day indoors.",
+      "Send a warm message to someone."
+    ]
+  },
+  {
+    "tag": "cloudy_greeting",
+    "patterns": [
+      "Hello, cloudy day",
+      "Good morning, clouds",
+      "Hey, cloudy day",
+      "Nice to see you, clouds",
+      "Hope your day is bright"
+    ],
+    "responses": [
+      "Hello, cloudy day! How are you feeling?",
+      "Good morning, clouds! Ready for a relaxing day?",
+      "Hope your day is bright, even if the sky isn’t!"
+    ],
+    "tips": [
+      "Find joy in simple moments.",
+      "Send a positive message."
+    ]
+  },
+  {
+    "tag": "windy_greeting",
+    "patterns": [
+      "Hello, windy day",
+      "Good morning, wind",
+      "Hey, windy day",
+      "Nice to see you, wind",
+      "Hold on tight!"
+    ],
+    "responses": [
+      "Hello, windy day! How are you feeling?",
+      "Good morning, wind! Ready for an adventurous day?",
+      "Hold on tight! Hope you’re staying safe."
+    ],
+    "tips": [
+      "Enjoy the energy of a windy day.",
+      "Send a fun message to someone."
+    ]
+  },
+  {
+    "tag": "cozy_greeting",
+    "patterns": [
+      "Hello, cozy day",
+      "Good morning, cozy",
+      "Hey, cozy day",
+      "Nice to see you, cozy",
+      "Stay cozy!"
+    ],
+    "responses": [
+      "Hello, cozy day! How are you feeling?",
+      "Good morning, cozy! Ready for a relaxing day?",
+      "Stay cozy! Hope you’re comfortable."
+    ],
+    "tips": [
+      "Enjoy a relaxing day indoors.",
+      "Share a cozy moment with someone."
+    ]
+  },
+  {
+    "tag": "adventure_greeting",
+    "patterns": [
+      "Hello, adventure",
+      "Good morning, adventure",
+      "Hey, adventure",
+      "Ready for adventure?",
+      "Let’s go on an adventure"
+    ],
+    "responses": [
+      "Hello, adventure! Where are we going?",
+      "Good morning, adventure! What’s the plan?",
+      "Ready for adventure? Let’s go!"
+    ],
+    "tips": [
+      "Embrace new experiences.",
+      "Plan a fun adventure with friends."
+    ]
+  },
+  {
+    "tag": "relax_greeting",
+    "patterns": [
+      "Hello, relax",
+      "Good morning, relax",
+      "Hey, relax",
+      "Time to relax",
+      "Let’s relax"
+    ],
+    "responses": [
+      "Hello, relax! How are you unwinding?",
+      "Good morning, relax! Ready for a calm day?",
+      "Time to relax! What are you doing to chill?"
+    ],
+    "tips": [
+      "Take time to unwind.",
+      "Share relaxation tips with friends."
+    ]
+  },
+  {
+    "tag": "fun_greeting",
+    "patterns": [
+      "Hello, fun",
+      "Good morning, fun",
+      "Hey, fun",
+      "Ready for fun?",
+      "Let’s have some fun"
+    ],
+    "responses": [
+      "Hello, fun! What are we doing today?",
+      "Good morning, fun! Ready for a good time?",
+      "Let’s have some fun! What’s the plan?"
+    ],
+    "tips": [
+      "Plan something fun today.",
+      "Share a fun idea with friends."
+    ]
+  },
+  {
+    "tag": "good_vibes_greeting",
+    "patterns": [
+      "Hello, good vibes",
+      "Good morning, good vibes",
+      "Hey, good vibes",
+      "Ready for good vibes?",
+      "Let’s spread good vibes"
+    ],
+    "responses": [
+      "Hello, good vibes! How are you feeling?",
+      "Good morning, good vibes! Ready to spread positivity?",
+      "Let’s spread good vibes! How can I help?"
+    ],
+    "tips": [
+      "Share positive energy with others.",
+      "Start conversations with good vibes."
+    ]
+  },
+  {
+    "tag": "happy_day_greeting",
+    "patterns": [
+      "Hello, happy day",
+      "Good morning, happy day",
+      "Hey, happy day",
+      "Ready for a happy day?",
+      "Let’s make it a happy day"
+    ],
+    "responses": [
+      "Hello, happy day! How are you feeling?",
+      "Good morning, happy day! Ready to enjoy?",
+      "Let’s make it a happy day! What’s the plan?"
+    ],
+    "tips": [
+      "Focus on the positives today.",
+      "Share a happy moment with someone."
+    ]
+  },
+  {
+    "tag": "new_day_greeting",
+    "patterns": [
+      "Hello, new day",
+      "Good morning, new day",
+      "Hey, new day",
+      "Ready for a new day?",
+      "Let’s start a new day"
+    ],
+    "responses": [
+      "Hello, new day! How are you feeling?",
+      "Good morning, new day! Ready for a fresh start?",
+      "Let’s start a new day! What are your goals?"
+    ],
+    "tips": [
+      "Set intentions for the day.",
+      "Encourage someone to start fresh."
+    ]
+  },
+  {
+    "tag": "fresh_start_greeting",
+    "patterns": [
+      "Hello, fresh start",
+      "Good morning, fresh start",
+      "Hey, fresh start",
+      "Ready for a fresh start?",
+      "Let’s make a fresh start"
+    ],
+    "responses": [
+      "Hello, fresh start! How are you feeling?",
+      "Good morning, fresh start! Ready to begin?",
+      "Let’s make a fresh start! What’s your plan?"
+    ],
+    "tips": [
+      "Embrace new beginnings.",
+      "Share your goals with someone."
+    ]
+  },
+  {
+    "tag": "positive_greeting",
+    "patterns": [
+      "Hello, positive vibes",
+      "Good morning, positive vibes",
+      "Hey, positive vibes",
+      "Ready for positive vibes?",
+      "Let’s spread positivity"
+    ],
+    "responses": [
+      "Hello, positive vibes! How are you feeling?",
+      "Good morning, positive vibes! Ready to spread joy?",
+      "Let’s spread positivity! How can I help?"
+    ],
+    "tips": [
+      "Share a positive message.",
+      "Encourage someone today."
+    ]
+  },
+  {
+    "tag": "encouraging_greeting",
+    "patterns": [
+      "Hello, encouragement",
+      "Good morning, encouragement",
+      "Hey, encouragement",
+      "Ready for encouragement?",
+      "Let’s encourage each other"
+    ],
+    "responses": [
+      "Hello, encouragement! How can I support you today?",
+      "Good morning, encouragement! You’ve got this!",
+      "Let’s encourage each other! What are your goals?"
+    ],
+    "tips": [
+      "Encourage someone to reach their goals.",
+      "Share a motivational message."
+    ]
+  },
+  {
+    "tag": "supportive_greeting",
+    "patterns": [
+      "Hello, support",
+      "Good morning, support",
+      "Hey, support",
+      "Ready for support?",
+      "Let’s support each other"
+    ],
+    "responses": [
+      "Hello, support! How can I help you today?",
+      "Good morning, support! I’m here for you.",
+      "Let’s support each other! What do you need?"
+    ],
+    "tips": [
+      "Offer support to someone today.",
+      "Ask for help when you need it."
+    ]
+  },
+  {
+    "tag": "friendly_wave",
+    "patterns": [
+      "👋",
+      "Hello! 👋",
+      "Hi! 👋",
+      "Hey! 👋",
+      "Good morning! 👋"
+    ],
+    "responses": [
+      "👋 Hello! How are you today?",
+      "👋 Hi! What’s up?",
+      "👋 Good morning! Ready for the day?"
+    ],
+    "tips": [
+      "A friendly wave is a universal greeting.",
+      "Start conversations with a smile."
+    ]
+  },
+  {
+    "tag": "empathy_listen",
+    "patterns": [
+      "I need someone to listen",
+      "Can you listen to me?",
+      "I just want to be heard",
+      "I need to talk about something",
+      "I need a listening ear"
+    ],
+    "responses": [
+      "I’m here to listen. What’s on your mind?",
+      "You have my full attention. Tell me what you’re feeling.",
+      "I’m ready to listen—share whatever you need."
+    ],
+    "tips": [
+      "Reach out to someone you trust.",
+      "Writing down your thoughts can also help."
+    ]
+  },
+  {
+    "tag": "validate_feelings",
+    "patterns": [
+      "No one understands how I feel",
+      "I feel misunderstood",
+      "I need validation",
+      "I feel invisible",
+      "Does anyone care how I feel?"
+    ],
+    "responses": [
+      "Your feelings are valid and important.",
+      "I understand—what you’re feeling matters.",
+      "You’re not alone. I care about how you feel."
+    ],
+    "tips": [
+      "Remind yourself that your emotions are valid.",
+      "Share your feelings with someone supportive."
+    ]
+  },
+  {
+    "tag": "offer_encouragement",
+    "patterns": [
+      "I need encouragement",
+      "Can you encourage me?",
+      "I feel discouraged",
+      "I need a boost",
+      "I need some motivation"
+    ],
+    "responses": [
+      "You’re doing great—keep going!",
+      "I believe in you. You’ve got this.",
+      "You’re stronger than you think."
+    ],
+    "tips": [
+      "Focus on your strengths.",
+      "Ask for encouragement when you need it."
+    ]
+  },
+  {
+    "tag": "comfort_during_stress",
+    "patterns": [
+      "I’m really stressed",
+      "I need comfort",
+      "I feel overwhelmed",
+      "I need to calm down",
+      "I’m under a lot of pressure"
+    ],
+    "responses": [
+      "It’s okay to feel stressed. Take a deep breath.",
+      "You’re not alone. Let’s talk through it.",
+      "Would a break help you feel better?"
+    ],
+    "tips": [
+      "Practice deep breathing or meditation.",
+      "Take a short walk to clear your mind."
+    ]
+  },
+  {
+    "tag": "support_during_sadness",
+    "patterns": [
+      "I feel sad",
+      "I need support",
+      "I’m feeling down",
+      "I need someone to talk to",
+      "I’m feeling blue"
+    ],
+    "responses": [
+      "I’m here for you. What’s making you feel sad?",
+      "It’s okay to feel down. Let’s talk about it.",
+      "Would sharing your feelings help?"
+    ],
+    "tips": [
+      "Reach out to a friend or loved one.",
+      "Write about your feelings in a journal."
+    ]
+  },
+  {
+    "tag": "positive_reinforcement",
+    "patterns": [
+      "I need positive words",
+      "Can you say something positive?",
+      "I need a pick-me-up",
+      "I need encouragement",
+      "I need to hear something good"
+    ],
+    "responses": [
+      "You’re doing better than you think.",
+      "You have so much to offer.",
+      "Your effort is appreciated."
+    ],
+    "tips": [
+      "Remind yourself of your accomplishments.",
+      "Ask for positive feedback when you need it."
+    ]
+  },
+  {
+    "tag": "acknowledge_effort",
+    "patterns": [
+      "I tried my best",
+      "I need recognition",
+      "I feel unappreciated",
+      "Does my effort matter?",
+      "I need to be acknowledged"
+    ],
+    "responses": [
+      "Your effort matters a lot.",
+      "I see how hard you’re working.",
+      "You’re making a difference."
+    ],
+    "tips": [
+      "Celebrate your progress, no matter how small.",
+      "Recognize your own achievements."
+    ]
+  },
+  {
+    "tag": "offer_reassurance",
+    "patterns": [
+      "I need reassurance",
+      "Can you reassure me?",
+      "I feel uncertain",
+      "I need to feel safe",
+      "I need to hear it’s okay"
+    ],
+    "responses": [
+      "Everything will be okay. I’m here for you.",
+      "You’re safe to share your feelings.",
+      "It’s okay to feel unsure. I’m here to help."
+    ],
+    "tips": [
+      "Remind yourself that uncertainty is normal.",
+      "Talk to someone you trust."
+    ]
+  },
+  {
+    "tag": "help_with_problem",
+    "patterns": [
+      "I need help with a problem",
+      "Can you help me solve this?",
+      "I don’t know what to do",
+      "I need advice",
+      "I’m stuck"
+    ],
+    "responses": [
+      "Let’s work through this together. What’s the problem?",
+      "I’m here to help. Tell me more.",
+      "We can find a solution. What’s on your mind?"
+    ],
+    "tips": [
+      "Break problems into smaller steps.",
+      "Ask for advice from someone you trust."
+    ]
+  },
+  {
+    "tag": "build_confidence",
+    "patterns": [
+      "I need to build confidence",
+      "I feel insecure",
+      "I need to believe in myself",
+      "I need self-confidence",
+      "I doubt myself"
+    ],
+    "responses": [
+      "You’re capable of more than you realize.",
+      "Believe in yourself—I believe in you.",
+      "You have strengths that others see."
+    ],
+    "tips": [
+      "List your strengths and achievements.",
+      "Practice positive self-talk."
+    ]
+  },
+  {
+    "tag": "celebrate_success",
+    "patterns": [
+      "I did something good",
+      "I want to celebrate",
+      "I achieved something",
+      "I need to share my success",
+      "I’m proud of myself"
+    ],
+    "responses": [
+      "That’s amazing! Tell me about your success.",
+      "Congratulations! You deserve to celebrate.",
+      "I’m proud of you. What did you achieve?"
+    ],
+    "tips": [
+      "Share your success with someone you trust.",
+      "Reward yourself for your accomplishments."
+    ]
+  },
+  {
+    "tag": "offer_hope",
+    "patterns": [
+      "I need hope",
+      "I feel hopeless",
+      "I need to see the light",
+      "I need to believe things will get better",
+      "I need encouragement"
+    ],
+    "responses": [
+      "There is always hope. Things can get better.",
+      "You’re not alone. Brighter days are ahead.",
+      "Hold on—hope is on the way."
+    ],
+    "tips": [
+      "Focus on small, positive changes.",
+      "Talk to someone about your feelings."
+    ]
+  },
+  {
+    "tag": "support_through_change",
+    "patterns": [
+      "I’m going through a change",
+      "I need support during change",
+      "I’m adjusting to something new",
+      "I need help adapting",
+      "Change is hard for me"
+    ],
+    "responses": [
+      "Change can be tough. I’m here for you.",
+      "It’s okay to feel unsure. Let’s talk about it.",
+      "You’re handling this well. I’m here to help."
+    ],
+    "tips": [
+      "Take things one step at a time.",
+      "Talk to someone who’s been through similar changes."
+    ]
+  },
+  {
+    "tag": "comfort_during_loss",
+    "patterns": [
+      "I lost someone important",
+      "I’m grieving",
+      "I need comfort after a loss",
+      "I feel empty inside",
+      "I miss someone"
+    ],
+    "responses": [
+      "I’m so sorry for your loss. I’m here for you.",
+      "Grieving is natural. Let’s talk about your feelings.",
+      "You’re not alone. I care about you."
+    ],
+    "tips": [
+      "Allow yourself to feel your emotions.",
+      "Reach out to someone you trust."
+    ]
+  },
+  {
+    "tag": "support_through_failure",
+    "patterns": [
+      "I failed at something",
+      "I feel like a failure",
+      "I need support after failing",
+      "I’m disappointed in myself",
+      "I need to bounce back"
+    ],
+    "responses": [
+      "Failure is part of growth. You’re not alone.",
+      "You’re brave for trying. Let’s talk about it.",
+      "You can learn from this and come back stronger."
+    ],
+    "tips": [
+      "Reflect on what you learned from the experience.",
+      "Talk to someone about your feelings."
+    ]
+  },
+  {
+    "tag": "encourage_self_care",
+    "patterns": [
+      "I need to take care of myself",
+      "I need self-care",
+      "I feel drained",
+      "I need to recharge",
+      "I need to look after myself"
+    ],
+    "responses": [
+      "Self-care is important. What do you need right now?",
+      "You deserve to take care of yourself. Let’s talk about it.",
+      "It’s okay to take a break. How can you recharge?"
+    ],
+    "tips": [
+      "Do something kind for yourself today.",
+      "Set aside time for rest and relaxation."
+    ]
+  },
+  {
+    "tag": "support_through_anxiety",
+    "patterns": [
+      "I’m feeling anxious",
+      "I need support with anxiety",
+      "I feel nervous",
+      "I need to calm my mind",
+      "I’m worried"
+    ],
+    "responses": [
+      "It’s okay to feel anxious. Let’s talk about it.",
+      "You’re not alone. I’m here to help.",
+      "Would deep breathing or grounding help?"
+    ],
+    "tips": [
+      "Practice mindfulness or deep breathing.",
+      "Talk to someone about your feelings."
+    ]
+  },
+  {
+    "tag": "encourage_boundaries",
+    "patterns": [
+      "I need to set boundaries",
+      "I feel overwhelmed by others",
+      "I need to say no",
+      "I need to protect my energy",
+      "I need to establish limits"
+    ],
+    "responses": [
+      "Setting boundaries is healthy and important.",
+      "You have the right to say no. I support you.",
+      "Protecting your energy is self-care."
+    ],
+    "tips": [
+      "Practice saying no in small ways.",
+      "Talk to someone about setting boundaries."
+    ]
+  },
+  {
+    "tag": "support_through_conflict",
+    "patterns": [
+      "I’m in a conflict",
+      "I need support during a fight",
+      "I’m arguing with someone",
+      "I need to resolve a disagreement",
+      "I feel upset after a conflict"
+    ],
+    "responses": [
+      "Conflict is tough. Let’s talk about what happened.",
+      "You’re not alone. I’m here to help.",
+      "Would talking it out help you feel better?"
+    ],
+    "tips": [
+      "Take a break if you need to cool down.",
+      "Talk to a neutral person for perspective."
+    ]
+  },
+  {
+    "tag": "encourage_forgiveness",
+    "patterns": [
+      "I need to forgive someone",
+      "I’m struggling to forgive",
+      "I feel resentment",
+      "I need to let go",
+      "I need to move on"
+    ],
+    "responses": [
+      "Forgiveness is hard but healing. Let’s talk about it.",
+      "You’re not alone. I’m here to support you.",
+      "Would sharing your feelings help?"
+    ],
+    "tips": [
+      "Write a letter (you don’t have to send it).",
+      "Talk to someone you trust about your feelings."
+    ]
+  },
+  {
+    "tag": "support_through_loneliness",
+    "patterns": [
+      "I feel lonely",
+      "I need support when I’m alone",
+      "I need someone to talk to",
+      "I feel isolated",
+      "I need connection"
+    ],
+    "responses": [
+      "Loneliness is tough. I’m here for you.",
+      "You’re not alone. Let’s talk about your feelings.",
+      "Would reaching out to someone help?"
+    ],
+    "tips": [
+      "Join a group or community that interests you.",
+      "Reach out to a friend or family member."
+    ]
+  },
+  {
+    "tag": "encourage_perseverance",
+    "patterns": [
+      "I want to give up",
+      "I need to keep going",
+      "I feel like quitting",
+      "I need to persevere",
+      "I need motivation to continue"
+    ],
+    "responses": [
+      "You’re stronger than you think. Keep going.",
+      "Perseverance is powerful. I believe in you.",
+      "You can do this. Take it one step at a time."
+    ],
+    "tips": [
+      "Break your goal into smaller steps.",
+      "Ask for support when you need it."
+    ]
+  },
+  {
+    "tag": "support_through_doubt",
+    "patterns": [
+      "I doubt myself",
+      "I need support with self-doubt",
+      "I feel unsure",
+      "I need to believe in myself",
+      "I need confidence"
+    ],
+    "responses": [
+      "Self-doubt is normal. You’re not alone.",
+      "You have strengths that others see.",
+      "I believe in you. You’ve got this."
+    ],
+    "tips": [
+      "List your achievements and strengths.",
+      "Talk to someone supportive."
+    ]
+  },
+  {
+    "tag": "support_through_transition",
+    "patterns": [
+      "I’m going through a transition",
+      "I need support during change",
+      "I’m adjusting to something new",
+      "I feel uncertain about the future",
+      "I need help adapting"
+    ],
+    "responses": [
+      "Transitions can be hard. I’m here for you.",
+      "You’re handling this well. Let’s talk about it.",
+      "It’s okay to feel unsure. I’m here to help."
+    ],
+    "tips": [
+      "Take things one day at a time.",
+      "Talk to someone who’s been through similar changes."
+    ]
+  },
+  {
+    "tag": "support_through_fear",
+    "patterns": [
+      "I’m scared",
+      "I need support with fear",
+      "I feel afraid",
+      "I need to feel safe",
+      "I need reassurance"
+    ],
+    "responses": [
+      "Fear is natural. You’re not alone.",
+      "I’m here for you. Let’s talk about your fears.",
+      "Would sharing your feelings help?"
+    ],
+    "tips": [
+      "Practice grounding techniques.",
+      "Talk to someone you trust."
+    ]
+  },
+  {
+    "tag": "support_through_anger",
+    "patterns": [
+      "I’m angry",
+      "I need support with anger",
+      "I feel frustrated",
+      "I need to calm down",
+      "I need to express my anger"
+    ],
+    "responses": [
+      "It’s okay to feel angry. Let’s talk about it.",
+      "You’re not alone. I’m here to help.",
+      "Would taking a break help you?"
+    ],
+    "tips": [
+      "Try deep breathing or counting to ten.",
+      "Write about your feelings in a journal."
+    ]
+  },
+  {
+    "tag": "support_through_shame",
+    "patterns": [
+      "I feel ashamed",
+      "I need support with shame",
+      "I feel embarrassed",
+      "I need to forgive myself",
+      "I need to let go of guilt"
+    ],
+    "responses": [
+      "Shame is tough. You’re not alone.",
+      "It’s okay to make mistakes. Let’s talk about it.",
+      "Would sharing your feelings help?"
+    ],
+    "tips": [
+      "Practice self-compassion.",
+      "Talk to someone you trust about your feelings."
+    ]
+  },
+  {
+    "tag": "support_through_grief",
+    "patterns": [
+      "I’m grieving",
+      "I need support after a loss",
+      "I feel empty inside",
+      "I miss someone",
+      "I need comfort"
+    ],
+    "responses": [
+      "Grieving is natural. I’m here for you.",
+      "You’re not alone. Let’s talk about your feelings.",
+      "Would sharing memories help?"
+    ],
+    "tips": [
+      "Allow yourself to feel your emotions.",
+      "Reach out to someone you trust."
+    ]
+  },
+  {
+    "tag": "support_through_burnout",
+    "patterns": [
+      "I feel burned out",
+      "I need support with burnout",
+      "I’m exhausted",
+      "I need to rest",
+      "I need to recharge"
+    ],
+    "responses": [
+      "Burnout is real. It’s okay to take a break.",
+      "You’re not alone. Let’s talk about your needs.",
+      "Would resting or taking time off help?"
+    ],
+    "tips": [
+      "Prioritize rest and self-care.",
+      "Talk to someone about your workload."
+    ]
+  },
+  {
+    "tag": "support_through_uncertainty",
+    "patterns": [
+      "I feel uncertain",
+      "I need support with uncertainty",
+      "I don’t know what to do",
+      "I feel lost",
+      "I need guidance"
+    ],
+    "responses": [
+      "Uncertainty is hard. I’m here for you.",
+      "You’re not alone. Let’s talk about your feelings.",
+      "Would brainstorming options help?"
+    ],
+    "tips": [
+      "Take things one step at a time.",
+      "Talk to someone you trust for advice."
+    ]
+  },
+  {
+    "tag": "support_through_jealousy",
+    "patterns": [
+      "I feel jealous",
+      "I need support with jealousy",
+      "I feel envy",
+      "I need to let go of comparison",
+      "I need to focus on myself"
+    ],
+    "responses": [
+      "Jealousy is natural. You’re not alone.",
+      "Let’s talk about your feelings. I’m here for you.",
+      "Would focusing on your own journey help?"
+    ],
+    "tips": [
+      "Limit social media if it makes you feel worse.",
+      "Practice gratitude for what you have."
+    ]
+  },
+  {
+    "tag": "support_through_regret",
+    "patterns": [
+      "I feel regret",
+      "I need support with regret",
+      "I wish I had done things differently",
+      "I need to let go of the past",
+      "I need to move forward"
+    ],
+    "responses": [
+      "Regret is tough. I’m here for you.",
+      "You’re not alone. Let’s talk about your feelings.",
+      "Would focusing on the present help?"
+    ],
+    "tips": [
+      "Reflect on what you’ve learned from the experience.",
+      "Talk to someone you trust."
+    ]
+  },
+  {
+    "tag": "support_through_guilt",
+    "patterns": [
+      "I feel guilty",
+      "I need support with guilt",
+      "I need to forgive myself",
+      "I feel bad about something",
+      "I need to let go of guilt"
+    ],
+    "responses": [
+      "Guilt is natural. You’re not alone.",
+      "It’s okay to make mistakes. Let’s talk about it.",
+      "Would sharing your feelings help?"
+    ],
+    "tips": [
+      "Practice self-forgiveness.",
+      "Talk to someone you trust about your feelings."
+    ]
+  },
+  {
+    "tag": "support_through_low_self_esteem",
+    "patterns": [
+      "I feel worthless",
+      "I need support with low self-esteem",
+      "I don’t feel good enough",
+      "I need to believe in myself",
+      "I need confidence"
+    ],
+    "responses": [
+      "You matter. I’m here for you.",
+      "You’re not alone. Let’s talk about your feelings.",
+      "Would focusing on your strengths help?"
+    ],
+    "tips": [
+      "List things you like about yourself.",
+      "Talk to someone supportive."
+    ]
+  },
+  {
+    "tag": "support_through_disappointment",
+    "patterns": [
+      "I feel disappointed",
+      "I need support with disappointment",
+      "I feel let down",
+      "I need to bounce back",
+      "I need encouragement"
+    ],
+    "responses": [
+      "Disappointment is hard. I’m here for you.",
+      "You’re not alone. Let’s talk about your feelings.",
+      "Would sharing what happened help?"
+    ],
+    "tips": [
+      "Reflect on what you’ve learned from the experience.",
+      "Talk to someone you trust."
+    ]
+  },
+  {
+    "tag": "support_through_overwhelm",
+    "patterns": [
+      "I feel overwhelmed",
+      "I need support with overwhelm",
+      "I have too much to do",
+      "I need to slow down",
+      "I need to take a break"
+    ],
+    "responses": [
+      "It’s okay to feel overwhelmed. Let’s talk about it.",
+      "You’re not alone. I’m here to help.",
+      "Would taking a break help you?"
+    ],
+    "tips": [
+      "Break tasks into smaller steps.",
+      "Prioritize rest and self-care."
+    ]
+  },
+  {
+    "tag": "support_through_heartbreak",
+    "patterns": [
+      "I’m heartbroken",
+      "I need support after a breakup",
+      "I feel hurt",
+      "I need to heal",
+      "I need comfort"
+    ],
+    "responses": [
+      "Heartbreak is painful. I’m here for you.",
+      "You’re not alone. Let’s talk about your feelings.",
+      "Would sharing your story help?"
+    ],
+    "tips": [
+      "Allow yourself to feel your emotions.",
+      "Reach out to someone you trust."
+    ]
+  },
+  {
+    "tag": "support_through_anxiety_attack",
+    "patterns": [
+      "I’m having an anxiety attack",
+      "I need support during an anxiety attack",
+      "I feel panicked",
+      "I need to calm down",
+      "I feel out of control"
+    ],
+    "responses": [
+      "You’re not alone. I’m here for you.",
+      "Let’s take slow, deep breaths together.",
+      "Would grounding techniques help?"
+    ],
+    "tips": [
+      "Focus on your breathing.",
+      "Talk to someone supportive."
+    ]
+  },
+  {
+    "tag": "support_through_sadness_attack",
+    "patterns": [
+      "I’m overwhelmed by sadness",
+      "I need support during sadness",
+      "I feel deeply sad",
+      "I need to cry",
+      "I need comfort"
+    ],
+    "responses": [
+      "It’s okay to feel sad. I’m here for you.",
+      "You’re not alone. Let’s talk about your feelings.",
+      "Would sharing your thoughts help?"
+    ],
+    "tips": [
+      "Allow yourself to cry and express your emotions.",
+      "Reach out to someone you trust."
+    ]
+  },
+  {
+    "tag": "support_through_loneliness_attack",
+    "patterns": [
+      "I feel intensely lonely",
+      "I need support with loneliness",
+      "I feel isolated",
+      "I need connection",
+      "I need someone to talk to"
+    ],
+    "responses": [
+      "Loneliness is tough. I’m here for you.",
+      "You’re not alone. Let’s talk about your feelings.",
+      "Would reaching out to someone help?"
+    ],
+    "tips": [
+      "Join a group or community that interests you.",
+      "Reach out to a friend or family member."
+    ]
+  },
+  {
+    "tag": "support_through_anger_attack",
+    "patterns": [
+      "I’m overwhelmed by anger",
+      "I need support with anger",
+      "I feel out of control",
+      "I need to calm down",
+      "I need to express my anger"
+    ],
+    "responses": [
+      "It’s okay to feel angry. I’m here for you.",
+      "Let’s take a moment to breathe.",
+      "Would writing about your feelings help?"
+    ],
+    "tips": [
+      "Try deep breathing or counting to ten.",
+      "Talk to someone you trust."
+    ]
+  },
+  {
+    "tag": "support_through_shame_attack",
+    "patterns": [
+      "I feel intense shame",
+      "I need support with shame",
+      "I feel embarrassed",
+      "I need to forgive myself",
+      "I need to let go"
+    ],
+    "responses": [
+      "Shame is tough. You’re not alone.",
+      "It’s okay to make mistakes. Let’s talk about it.",
+      "Would sharing your feelings help?"
+    ],
+    "tips": [
+      "Practice self-compassion.",
+      "Talk to someone you trust about your feelings."
+    ]
+  },
+  {
+    "tag": "support_through_guilt_attack",
+    "patterns": [
+      "I feel intense guilt",
+      "I need support with guilt",
+      "I feel bad about something",
+      "I need to forgive myself",
+      "I need to move on"
+    ],
+    "responses": [
+      "Guilt is natural. You’re not alone.",
+      "It’s okay to make mistakes. Let’s talk about it.",
+      "Would sharing your feelings help?"
+    ],
+    "tips": [
+      "Practice self-forgiveness.",
+      "Talk to someone you trust about your feelings."
+    ]
+  },
+  {
+    "tag": "support_through_fear_attack",
+    "patterns": [
+      "I feel intense fear",
+      "I need support with fear",
+      "I feel scared",
+      "I need to feel safe",
+      "I need reassurance"
+    ],
+    "responses": [
+      "Fear is natural. You’re not alone.",
+      "I’m here for you. Let’s talk about your fears.",
+      "Would sharing your feelings help?"
+    ],
+    "tips": [
+      "Practice grounding techniques.",
+      "Talk to someone you trust."
+    ]
+  },
+  {
+    "tag": "support_through_regret_attack",
+    "patterns": [
+      "I feel intense regret",
+      "I need support with regret",
+      "I wish I had done things differently",
+      "I need to let go of the past",
+      "I need to move forward"
+    ],
+    "responses": [
+      "Regret is tough. I’m here for you.",
+      "You’re not alone. Let’s talk about your feelings.",
+      "Would focusing on the present help?"
+    ],
+    "tips": [
+      "Reflect on what you’ve learned from the experience.",
+      "Talk to someone you trust."
+    ]
+  },
+  {
+    "tag": "support_through_jealousy_attack",
+    "patterns": [
+      "I feel intense jealousy",
+      "I need support with jealousy",
+      "I feel envy",
+      "I need to let go of comparison",
+      "I need to focus on myself"
+    ],
+    "responses": [
+      "Jealousy is natural. You’re not alone.",
+      "Let’s talk about your feelings. I’m here for you.",
+      "Would focusing on your own journey help?"
+    ],
+    "tips": [
+      "Limit social media if it makes you feel worse.",
+      "Practice gratitude for what you have."
+    ]
+  },
+  {
+    "tag": "support_through_disappointment_attack",
+    "patterns": [
+      "I feel intensely disappointed",
+      "I need support with disappointment",
+      "I feel let down",
+      "I need to bounce back",
+      "I need encouragement"
+    ],
+    "responses": [
+      "Disappointment is hard. I’m here for you.",
+      "You’re not alone. Let’s talk about your feelings.",
+      "Would sharing what happened help?"
+    ],
+    "tips": [
+      "Reflect on what you’ve learned from the experience.",
+      "Talk to someone you trust."
+    ]
+  },
+  {
+    "tag": "support_through_low_self_esteem_attack",
+    "patterns": [
+      "I feel intensely worthless",
+      "I need support with low self-esteem",
+      "I don’t feel good enough",
+      "I need to believe in myself",
+      "I need confidence"
+    ],
+    "responses": [
+      "You matter. I’m here for you.",
+      "You’re not alone. Let’s talk about your feelings.",
+      "Would focusing on your strengths help?"
+    ],
+    "tips": [
+      "List things you like about yourself.",
+      "Talk to someone supportive."
+    ]
+  },
+  {
+    "tag": "support_through_burnout_attack",
+    "patterns": [
+      "I feel intensely burned out",
+      "I need support with burnout",
+      "I’m exhausted",
+      "I need to rest",
+      "I need to recharge"
+    ],
+    "responses": [
+      "Burnout is real. It’s okay to take a break.",
+      "You’re not alone. Let’s talk about your needs.",
+      "Would resting or taking time off help?"
+    ],
+    "tips": [
+      "Prioritize rest and self-care.",
+      "Talk to someone about your workload."
+    ]
+  },
+  {
+    "tag": "support_through_uncertainty_attack",
+    "patterns": [
+      "I feel intensely uncertain",
+      "I need support with uncertainty",
+      "I don’t know what to do",
+      "I feel lost",
+      "I need guidance"
+    ],
+    "responses": [
+      "Uncertainty is hard. I’m here for you.",
+      "You’re not alone. Let’s talk about your feelings.",
+      "Would brainstorming options help?"
+    ],
+    "tips": [
+      "Take things one step at a time.",
+      "Talk to someone you trust for advice."
+    ]
+  },
+  {
+    "tag": "support_through_change_attack",
+    "patterns": [
+      "I feel intensely overwhelmed by change",
+      "I need support with change",
+      "I’m adjusting to something new",
+      "I feel uncertain about the future",
+      "I need help adapting"
+    ],
+    "responses": [
+      "Change can be tough. I’m here for you.",
+      "You’re handling this well. Let’s talk about it.",
+      "It’s okay to feel unsure. I’m here to help."
+    ],
+    "tips": [
+      "Take things one day at a time.",
+      "Talk to someone who’s been through similar changes."
+    ]
+  },
+  {
+    "tag": "support_through_grief_attack",
+    "patterns": [
+      "I feel intensely grieving",
+      "I need support after a loss",
+      "I feel empty inside",
+      "I miss someone",
+      "I need comfort"
+    ],
+    "responses": [
+      "Grieving is natural. I’m here for you.",
+      "You’re not alone. Let’s talk about your feelings.",
+      "Would sharing memories help?"
+    ],
+    "tips": [
+      "Allow yourself to feel your emotions.",
+      "Reach out to someone you trust."
+    ]
+  },
+  {
+    "tag": "support_through_heartbreak_attack",
+    "patterns": [
+      "I feel intensely heartbroken",
+      "I need support after a breakup",
+      "I feel hurt",
+      "I need to heal",
+      "I need comfort"
+    ],
+    "responses": [
+      "Heartbreak is painful. I’m here for you.",
+      "You’re not alone. Let’s talk about your feelings.",
+      "Would sharing your story help?"
+    ],
+    "tips": [
+      "Allow yourself to feel your emotions.",
+      "Reach out to someone you trust."
+    ]
+  },
+  {
+    "tag": "support_through_transition_attack",
+    "patterns": [
+      "I feel intensely overwhelmed by transition",
+      "I need support during change",
+      "I’m adjusting to something new",
+      "I feel uncertain about the future",
+      "I need help adapting"
+    ],
+    "responses": [
+      "Transitions can be hard. I’m here for you.",
+      "You’re handling this well. Let’s talk about it.",
+      "It’s okay to feel unsure. I’m here to help."
+    ],
+    "tips": [
+      "Take things one day at a time.",
+      "Talk to someone who’s been through similar changes."
+    ]
+  },
+  {
+    "tag": "support_through_failure_attack",
+    "patterns": [
+      "I feel intensely like a failure",
+      "I need support after failing",
+      "I’m disappointed in myself",
+      "I need to bounce back",
+      "I need encouragement"
+    ],
+    "responses": [
+      "Failure is part of growth. You’re not alone.",
+      "You’re brave for trying. Let’s talk about it.",
+      "You can learn from this and come back stronger."
+    ],
+    "tips": [
+      "Reflect on what you learned from the experience.",
+      "Talk to someone about your feelings."
+    ]
+  },
+  {
+    "tag": "support_through_loneliness_phase",
+    "patterns": [
+      "I’ve been feeling lonely for a while",
+      "I need support with ongoing loneliness",
+      "I feel isolated",
+      "I need connection",
+      "I need someone to talk to"
+    ],
+    "responses": [
+      "Loneliness can be persistent. I’m here for you.",
+      "You’re not alone. Let’s talk about your feelings.",
+      "Would joining a group or community help?"
+    ],
+    "tips": [
+      "Reach out to a friend or family member.",
+      "Join a group or activity that interests you."
+    ]
+  },
+  {
+    "tag": "support_through_sadness_phase",
+    "patterns": [
+      "I’ve been feeling sad for a while",
+      "I need support with ongoing sadness",
+      "I feel down",
+      "I need to talk about my feelings",
+      "I need comfort"
+    ],
+    "responses": [
+      "Ongoing sadness is tough. I’m here for you.",
+      "You’re not alone. Let’s talk about your feelings.",
+      "Would sharing your story help?"
+    ],
+    "tips": [
+      "Reach out to a mental health professional.",
+      "Talk to someone you trust."
+    ]
+  },
+  {
+    "tag": "support_through_anxiety_phase",
+    "patterns": [
+      "I’ve been feeling anxious for a while",
+      "I need support with ongoing anxiety",
+      "I feel nervous",
+      "I need to calm my mind",
+      "I need to talk about my anxiety"
+    ],
+    "responses": [
+      "Ongoing anxiety is tough. I’m here for you.",
+      "You’re not alone. Let’s talk about your feelings.",
+      "Would mindfulness or deep breathing help?"
+    ],
+    "tips": [
+      "Practice grounding techniques.",
+      "Talk to a mental health professional."
+    ]
+  },
+  {
+    "tag": "support_through_anger_phase",
+    "patterns": [
+      "I’ve been feeling angry for a while",
+      "I need support with ongoing anger",
+      "I feel frustrated",
+      "I need to calm down",
+      "I need to talk about my anger"
+    ],
+    "responses": [
+      "Ongoing anger is tough. I’m here for you.",
+      "You’re not alone. Let’s talk about your feelings.",
+      "Would writing about your feelings help?"
+    ],
+    "tips": [
+      "Try deep breathing or counting to ten.",
+      "Talk to someone you trust."
+    ]
+  },
+  {
+    "tag": "support_through_shame_phase",
+    "patterns": [
+      "I’ve been feeling ashamed for a while",
+      "I need support with ongoing shame",
+      "I feel embarrassed",
+      "I need to forgive myself",
+      "I need to let go"
+    ],
+    "responses": [
+      "Ongoing shame is tough. You’re not alone.",
+      "It’s okay to make mistakes. Let’s talk about it.",
+      "Would sharing your feelings help?"
+    ],
+    "tips": [
+      "Practice self-compassion.",
+      "Talk to someone you trust about your feelings."
+    ]
+  },
+  {
+    "tag": "support_through_guilt_phase",
+    "patterns": [
+      "I’ve been feeling guilty for a while",
+      "I need support with ongoing guilt",
+      "I feel bad about something",
+      "I need to forgive myself",
+      "I need to move on"
+    ],
+    "responses": [
+      "Ongoing guilt is tough. You’re not alone.",
+      "It’s okay to make mistakes. Let’s talk about it.",
+      "Would sharing your feelings help?"
+    ],
+    "tips": [
+      "Practice self-forgiveness.",
+      "Talk to someone you trust about your feelings."
+    ]
+  },
+  {
+    "tag": "support_through_fear_phase",
+    "patterns": [
+      "I’ve been feeling fearful for a while",
+      "I need support with ongoing fear",
+      "I feel scared",
+      "I need to feel safe",
+      "I need reassurance"
+    ],
+    "responses": [
+      "Ongoing fear is tough. I’m here for you.",
+      "You’re not alone. Let’s talk about your fears.",
+      "Would sharing your feelings help?"
+    ],
+    "tips": [
+      "Practice grounding techniques.",
+      "Talk to someone you trust."
+    ]
+  },
+  {
+    "tag": "support_through_regret_phase",
+    "patterns": [
+      "I’ve been feeling regretful for a while",
+      "I need support with ongoing regret",
+      "I wish I had done things differently",
+      "I need to let go of the past",
+      "I need to move forward"
+    ],
+    "responses": [
+      "Ongoing regret is tough. I’m here for you.",
+      "You’re not alone. Let’s talk about your feelings.",
+      "Would focusing on the present help?"
+    ],
+    "tips": [
+      "Reflect on what you’ve learned from the experience.",
+      "Talk to someone you trust."
+    ]
+  },
+  {
+    "tag": "support_through_jealousy_phase",
+    "patterns": [
+      "I’ve been feeling jealous for a while",
+      "I need support with ongoing jealousy",
+      "I feel envy",
+      "I need to let go of comparison",
+      "I need to focus on myself"
+    ],
+    "responses": [
+      "Ongoing jealousy is tough. You’re not alone.",
+      "Let’s talk about your feelings. I’m here for you.",
+      "Would focusing on your own journey help?"
+    ],
+    "tips": [
+      "Limit social media if it makes you feel worse.",
+      "Practice gratitude for what you have."
+    ]
+  },
+  {
+    "tag": "support_through_disappointment_phase",
+    "patterns": [
+      "I’ve been feeling disappointed for a while",
+      "I need support with ongoing disappointment",
+      "I feel let down",
+      "I need to bounce back",
+      "I need encouragement"
+    ],
+    "responses": [
+      "Ongoing disappointment is tough. I’m here for you.",
+      "You’re not alone. Let’s talk about your feelings.",
+      "Would sharing what happened help?"
+    ],
+    "tips": [
+      "Reflect on what you’ve learned from the experience.",
+      "Talk to someone you trust."
+    ]
+  },
+  {
+    "tag": "support_through_low_self_esteem_phase",
+    "patterns": [
+      "I’ve been feeling worthless for a while",
+      "I need support with ongoing low self-esteem",
+      "I don’t feel good enough",
+      "I need to believe in myself",
+      "I need confidence"
+    ],
+    "responses": [
+      "Ongoing low self-esteem is tough. You matter.",
+      "You’re not alone. Let’s talk about your feelings.",
+      "Would focusing on your strengths help?"
+    ],
+    "tips": [
+      "List things you like about yourself.",
+      "Talk to someone supportive."
+    ]
+  },
+  {
+    "tag": "support_through_burnout_phase",
+    "patterns": [
+      "I’ve been feeling burned out for a while",
+      "I need support with ongoing burnout",
+      "I’m exhausted",
+      "I need to rest",
+      "I need to recharge"
+    ],
+    "responses": [
+      "Ongoing burnout is tough. It’s okay to take a break.",
+      "You’re not alone. Let’s talk about your needs.",
+      "Would resting or taking time off help?"
+    ],
+    "tips": [
+      "Prioritize rest and self-care.",
+      "Talk to someone about your workload."
+    ]
+  },
+  {
+    "tag": "support_through_uncertainty_phase",
+    "patterns": [
+      "I’ve been feeling uncertain for a while",
+      "I need support with ongoing uncertainty",
+      "I don’t know what to do",
+      "I feel lost",
+      "I need guidance"
+    ],
+    "responses": [
+      "Ongoing uncertainty is tough. I’m here for you.",
+      "You’re not alone. Let’s talk about your feelings.",
+      "Would brainstorming options help?"
+    ],
+    "tips": [
+      "Take things one step at a time.",
+      "Talk to someone you trust for advice."
+    ]
+  },
+  {
+    "tag": "support_through_change_phase",
+    "patterns": [
+      "I’ve been struggling with change for a while",
+      "I need support with ongoing change",
+      "I’m adjusting to something new",
+      "I feel uncertain about the future",
+      "I need help adapting"
+    ],
+    "responses": [
+      "Ongoing change is tough. I’m here for you.",
+      "You’re handling this well. Let’s talk about it.",
+      "It’s okay to feel unsure. I’m here to help."
+    ],
+    "tips": [
+      "Take things one day at a time.",
+      "Talk to someone who’s been through similar changes."
+    ]
+  },
+  {
+    "tag": "support_through_grief_phase",
+    "patterns": [
+      "I’ve been grieving for a while",
+      "I need support with ongoing grief",
+      "I feel empty inside",
+      "I miss someone",
+      "I need comfort"
+    ],
+    "responses": [
+      "Ongoing grief is tough. I’m here for you.",
+      "You’re not alone. Let’s talk about your feelings.",
+      "Would sharing memories help?"
+    ],
+    "tips": [
+      "Allow yourself to feel your emotions.",
+      "Reach out to someone you trust."
+    ]
+  },
+  {
+    "tag": "support_through_heartbreak_phase",
+    "patterns": [
+      "I’ve been heartbroken for a while",
+      "I need support with ongoing heartbreak",
+      "I feel hurt",
+      "I need to heal",
+      "I need comfort"
+    ],
+    "responses": [
+      "Ongoing heartbreak is tough. I’m here for you.",
+      "You’re not alone. Let’s talk about your feelings.",
+      "Would sharing your story help?"
+    ],
+    "tips": [
+      "Allow yourself to feel your emotions.",
+      "Reach out to someone you trust."
+    ]
+  },
+  {
+    "tag": "support_through_transition_phase",
+    "patterns": [
+      "I’ve been struggling with transition for a while",
+      "I need support with ongoing transition",
+      "I’m adjusting to something new",
+      "I feel uncertain about the future",
+      "I need help adapting"
+    ],
+    "responses": [
+      "Ongoing transition is tough. I’m here for you.",
+      "You’re handling this well. Let’s talk about it.",
+      "It’s okay to feel unsure. I’m here to help."
+    ],
+    "tips": [
+      "Take things one day at a time.",
+      "Talk to someone who’s been through similar changes."
+    ]
+  },
+  {
+    "tag": "support_through_failure_phase",
+    "patterns": [
+      "I’ve been feeling like a failure for a while",
+      "I need support with ongoing failure",
+      "I’m disappointed in myself",
+      "I need to bounce back",
+      "I need encouragement"
+    ],
+    "responses": [
+      "Ongoing feelings of failure are tough. You’re not alone.",
+      "You’re brave for trying. Let’s talk about it.",
+      "You can learn from this and come back stronger."
+    ],
+    "tips": [
+      "Reflect on what you learned from the experience.",
+      "Talk to someone about your feelings."
+    ]
+  }
+]
+}

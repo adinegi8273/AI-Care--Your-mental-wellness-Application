@@ -1,0 +1,6 @@
+anger:0
+fear:2
+joy:3
+love:0
+sadness:2
+surprise:1

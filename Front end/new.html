@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Care - Mental Wellness Companion</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <style>
+        body {
+            background: #232e5c;
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            color: #fff;
+        }
+        .navbar {
+            background: linear-gradient(90deg, #232e5c 0%, #4a90e2 100%);
+            padding: 1rem 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 24px rgba(74,144,226,0.12);
+        }
+        .navbar-content {
+            width: 90%;
+            max-width: 1200px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar-logo {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #fff;
+        }
+        .navbar-links a {
+            color: #e2eafc;
+            text-decoration: none;
+            margin-left: 2rem;
+            font-weight: 600;
+            font-size: 1.1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            transition: background 0.2s, color 0.2s;
+        }
+        .navbar-links a:hover, .navbar-links a.active {
+            background: rgba(255,255,255,0.15);
+            color: #d24b67;
+        }
+        .start-chat-nav {
+            background: linear-gradient(90deg, #4a90e2 0%, #d24b67 100%);
+            color: #fff !important;
+            font-weight: bold;
+            margin-left: 2rem;
+        }
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 7rem 1rem 4rem 1rem;
+            min-height: 60vh;
+            text-align: center;
+        }
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 900;
+            margin-bottom: 1.2rem;
+            letter-spacing: 2px;
+        }
+        .hero-subtitle {
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin-bottom: 2.5rem;
+            color: #e2eafc;
+        }
+        .hero-cta {
+            background: linear-gradient(90deg, #4a90e2 0%, #d24b67 100%);
+            color: #fff;
+            font-size: 1.2rem;
+            font-weight: bold;
+            padding: 1rem 2.8rem;
+            border: none;
+            border-radius: 30px;
+            box-shadow: 0 4px 18px rgba(76, 51, 255, 0.13);
+            cursor: pointer;
+            transition: background 0.2s;
+            text-decoration: none;
+        }
+        .hero-cta:hover {
+            background: linear-gradient(90deg, #d24b67 0%, #4a90e2 100%);
+        }
+        .features-section {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 3rem 1rem 2rem 1rem;
+        }
+        .feature-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 3rem;
+        }
+        .feature-row.reverse {
+            flex-direction: row-reverse;
+        }
+        .feature-img {
+            flex: 1 1 320px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .feature-img img {
+            width: 320px;
+            max-width: 90vw;
+            border-radius: 18px;
+            box-shadow: 0 8px 32px rgba(76, 51, 255, 0.13);
+        }
+        .feature-content {
+            flex: 1 1 400px;
+            padding: 2rem;
+            background: rgba(255,255,255,0.08);
+            border-radius: 18px;
+            margin: 0 2rem;
+        }
+        .feature-title {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #d24b67;
+            margin-bottom: 1rem;
+        }
+        .feature-desc {
+            font-size: 1.15rem;
+            color: #e2eafc;
+        }
+        @media (max-width: 900px) {
+            .feature-row, .feature-row.reverse {
+                flex-direction: column !important;
+                text-align: center;
+            }
+            .feature-content {
+                margin: 2rem 0 0 0;
+                padding: 1.2rem;
+            }
+        }
+        footer {
+            background: linear-gradient(90deg, #232e5c 0%, #4a90e2 100%);
+            color: #e2eafc;
+            padding: 3rem 1rem 1rem 1rem;
+            margin-top: 3rem;
+            border-top-left-radius: 32px;
+            border-top-right-radius: 32px;
+        }
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2rem;
+        }
+        .footer-info {
+            flex: 2 1 350px;
+        }
+        .footer-info h3 {
+            color: #fff;
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        .footer-info p {
+            font-size: 1.1rem;
+            color: #e2eafc;
+            margin-bottom: 1.5rem;
+        }
+        .footer-social {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .footer-social a {
+            color: #fff;
+            font-size: 1.8rem;
+            transition: color 0.2s;
+        }
+        .footer-social a:hover {
+            color: #d24b67;
+        }
+        .footer-img {
+            flex: 1 1 220px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .footer-img img {
+            width: 180px;
+            max-width: 100%;
+            border-radius: 18px;
+            box-shadow: 0 8px 32px rgba(76, 51, 255, 0.13);
+        }
+        .footer-copyright {
+            text-align: center;
+            font-size: 1rem;
+            color: #b0c4de;
+            margin-top: 2rem;
+            letter-spacing: 1px;
+        }
+        @media (max-width: 700px) {
+            .footer-container {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 2.5rem;
+            }
+            .footer-img {
+                justify-content: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-content">
+            <div class="navbar-logo">AI Care</div>
+            <div class="navbar-links">
+                <a href="#home" class="active">Home</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#why-us">Why Choose Us</a>
+                <a href="#faq-section">FAQ</a>
+                <a href="login.html" class="start-chat-nav">Login to Chat</a>
+            </div>
+        </div>
+    </nav>
+    <section class="hero" id="home">
+        <div class="hero-title">AI Care - Mental Wellness Companion</div>
+        <div class="hero-subtitle">
+            Your personal AI-powered partner for mental wellness, self-care, and emotional support.
+        </div>
+        <a href="http://127.0.0.1:5000" class="hero-cta">Start Chat</a>
+        <br><br>
+        <a href="dashboard.html" class="hero-cta">Track My Mood</a>
+    </section>
+    <section class="features-section" id="how-it-works">
+        <div class="feature-row">
+            <div class="feature-img">
+                <img src="https://cdn-icons-png.flaticon.com/512/3062/3062634.png" alt="AI Chatbot Support">
+            </div>
+            <div class="feature-content">
+                <div class="feature-title">AI Chatbot Support</div>
+                <div class="feature-desc">Real-time, empathetic conversations for guidance and emotional support. CBT-inspired responses tailored to user needs.</div>
+            </div>
+        </div>
+        <div class="feature-row reverse">
+            <div class="feature-img">
+                <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Mood Tracking System">
+            </div>
+            <div class="feature-content">
+                <div class="feature-title">Mood Tracking System</div>
+                <div class="feature-desc">Log daily moods and emotions for self-awareness. Visualize mood trends and receive personalized insights.</div>
+            </div>
+        </div>
+        <div class="feature-row">
+            <div class="feature-img">
+                <img src="https://cdn-icons-png.flaticon.com/512/1828/1828919.png" alt="Personalized Dashboard">
+            </div>
+            <div class="feature-content">
+                <div class="feature-title">Personalized Dashboard</div>
+                <div class="feature-desc">Track your progress and access mental wellness analytics. Custom recommendations for self-care and growth.</div>
+            </div>
+        </div>
+        <div class="feature-row reverse">
+            <div class="feature-img">
+                <img src="https://cdn-icons-png.flaticon.com/512/3064/3064197.png" alt="Secure User Data Management">
+            </div>
+            <div class="feature-content">
+                <div class="feature-title">Secure User Data Management</div>
+                <div class="feature-desc">All data securely stored and managed in MongoDB. Strict privacy and security protocols for your peace of mind.</div>
+            </div>
+        </div>
+        <div class="feature-row">
+            <div class="feature-img">
+                <img src="https://cdn-icons-png.flaticon.com/512/1828/1828843.png" alt="Web Interface">
+            </div>
+            <div class="feature-content">
+                <div class="feature-title">Web Interface</div>
+                <div class="feature-desc">Modern, intuitive design for seamless user experience. Accessible from any device, anytime.</div>
+            </div>
+        </div>
+        <div class="feature-row reverse">
+            <div class="feature-img">
+                <img src="https://cdn-icons-png.flaticon.com/512/747/747545.png" alt="User Authentication">
+            </div>
+            <div class="feature-content">
+                <div class="feature-title">User Authentication</div>
+                <div class="feature-desc">Simple login and registration for secure access. Protects your data and personal information.</div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3>AI Care</h3>
+                <p>
+                    AI Care is your trusted companion for mental wellness. Our platform offers AI-powered chat support, mood tracking, and personalized dashboards to help you manage stress, track your emotions, and grow every day. Your privacy and well-being are our top priorities.
+                </p>
+                <div class="footer-social">
+                    <a href="mailto:support@aicare.com" title="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-img">
+                <img src="https://cdn.pixabay.com/photo/2017/01/31/13/14/brain-2029366_1280.png" alt="Mental Wellness AI">
+            </div>
+        </div>
+        <div class="footer-copyright">
+            &copy; 2025 AI Care – Your Mental Wellness Companion. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>

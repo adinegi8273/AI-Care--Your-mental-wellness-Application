@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register - AI Care</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: #232e5c;
+      font-family: 'Roboto', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+    .register-container {
+      background: rgba(255,255,255,0.97);
+      padding: 2.8rem 2rem 2rem 2rem;
+      border-radius: 24px;
+      box-shadow: 0 8px 32px rgba(76, 51, 255, 0.15);
+      width: 370px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .register-container h2 {
+      text-align: center;
+      margin-bottom: 1.8rem;
+      color: #232e5c;
+      font-size: 2.1rem;
+      font-weight: 900;
+      letter-spacing: 1.2px;
+    }
+    .form-group {
+      width: 100%;
+      margin-bottom: 1.2rem;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+      color: #4a90e2;
+      letter-spacing: 0.5px;
+    }
+    .form-group input {
+      width: 100%;
+      padding: 0.85rem;
+      border: 1.5px solid #4a90e2;
+      border-radius: 12px;
+      outline: none;
+      font-size: 1.08rem;
+      background: #f7fafd;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .form-group input:focus {
+      border-color: #d24b67;
+      box-shadow: 0 0 8px #d24b6755;
+    }
+    .register-btn {
+      width: 100%;
+      padding: 0.85rem;
+      background: linear-gradient(90deg, #4a90e2 0%, #d24b67 100%);
+      border: none;
+      border-radius: 12px;
+      color: white;
+      font-weight: bold;
+      font-size: 1.15rem;
+      cursor: pointer;
+      transition: background 0.3s;
+      margin-top: 0.5rem;
+      letter-spacing: 1px;
+      box-shadow: 0 2px 8px #d24b6722;
+    }
+    .register-btn:hover {
+      background: linear-gradient(90deg, #d24b67 0%, #4a90e2 100%);
+    }
+    .bottom-text {
+      text-align: center;
+      margin-top: 1.4rem;
+      color: #232e5c;
+      font-size: 1rem;
+    }
+    .bottom-text a {
+      color: #d24b67;
+      text-decoration: none;
+      font-weight: 700;
+      margin-left: 0.2rem;
+      transition: text-decoration 0.2s;
+    }
+    .bottom-text a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 500px) {
+      .register-container {
+        width: 95vw;
+        padding: 1.2rem 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="register-container">
+    <h2>Register</h2>
+    <form action="/register" method="POST" autocomplete="off">
+      <div class="form-group">
+        <label for="name">Username</label>
+        <input type="text" id="name" name="username" required />
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required />
+      </div>
+      <button type="submit" class="register-btn">Create Account</button>
+    </form>
+    <div class="bottom-text">
+      Already have an account?
+      <a href="login.html">Login</a>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Care - Mood Tracking Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body { background: #232e5c; margin: 0; font-family: 'Roboto', sans-serif; color: #fff; min-height: 100vh; }
+        .navbar { background: linear-gradient(90deg, #232e5c 0%, #4a90e2 100%); padding: 1rem 0; display: flex; justify-content: center; align-items: center; box-shadow: 0 4px 24px rgba(74,144,226,0.12); }
+        .navbar-content { width: 90%; max-width: 1200px; display: flex; justify-content: space-between; align-items: center; }
+        .navbar-logo { font-size: 2rem; font-weight: bold; color: #fff; }
+        .navbar-links a { color: #e2eafc; text-decoration: none; margin-left: 2rem; font-weight: 600; font-size: 1.1rem; padding: 0.5rem 1rem; border-radius: 20px; transition: background 0.2s, color 0.2s; }
+        .navbar-links a:hover, .navbar-links a.active { background: rgba(255,255,255,0.15); color: #d24b67; }
+        .glass-container { background: rgba(255, 255, 255, 0.08); backdrop-filter: blur(10px); border-radius: 24px; padding: 2rem; width: 90%; max-width: 1200px; margin: 2rem auto; box-shadow: 0 8px 32px rgba(76, 51, 255, 0.13); }
+        .dashboard-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; }
+        .dashboard-title { font-size: 2.5rem; font-weight: 900; color: #fff; margin: 0; }
+        .dashboard-content { display: flex; flex-wrap: wrap; gap: 2rem; margin-top: 1.5rem; }
+        .chart-container { flex: 2; min-width: 300px; background: rgba(255, 255, 255, 0.1); border-radius: 18px; padding: 1.5rem; box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1); }
+        .stats-container { flex: 1; min-width: 250px; display: flex; flex-direction: column; gap: 1rem; }
+        .stat-card { background: rgba(255, 255, 255, 0.1); border-radius: 18px; padding: 1.5rem; box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1); transition: transform 0.2s, box-shadow 0.2s; cursor: pointer; }
+        .stat-card:hover { transform: translateY(-5px); box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); }
+        .stat-title { font-size: 1.2rem; font-weight: 700; color: #d24b67; margin-bottom: 0.5rem; }
+        .stat-value { font-size: 2rem; font-weight: 900; color: #fff; margin: 0; }
+        .emotion-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 1rem; margin-top: 2rem; }
+        .emotion-card { background: rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 1rem; text-align: center; cursor: pointer; transition: transform 0.2s, background 0.2s; }
+        .emotion-card:hover { background: rgba(255, 255, 255, 0.2); transform: scale(1.05); }
+        .emotion-icon { font-size: 2rem; margin-bottom: 0.5rem; }
+        .emotion-name { font-weight: 600; margin-bottom: 0.5rem; }
+        .emotion-count { font-size: 1.2rem; font-weight: 700; }
+        .nav-link { color: #fff; text-decoration: none; font-weight: bold; background: rgba(255, 255, 255, 0.15); padding: 0.5rem 1rem; border-radius: 20px; transition: background 0.2s, color 0.2s; }
+        .nav-link:hover { background: rgba(255, 255, 255, 0.25); color: #d24b67; }
+        .tooltip { position: relative; display: inline-block; }
+        .tooltip .tooltiptext { visibility: hidden; width: 160px; background-color: #4a90e2; color: #fff; text-align: center; border-radius: 6px; padding: 0.5rem; position: absolute; z-index: 1; bottom: 125%; left: 50%; margin-left: -80px; opacity: 0; transition: opacity 0.3s; }
+        .tooltip:hover .tooltiptext { visibility: visible; opacity: 1; }
+        footer { background: linear-gradient(90deg, #232e5c 0%, #4a90e2 100%); color: #e2eafc; padding: 3rem 1rem 1rem 1rem; margin-top: 3rem; border-top-left-radius: 32px; border-top-right-radius: 32px; }
+        .footer-container { max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 2rem; }
+        .footer-info { flex: 2 1 350px; }
+        .footer-info h3 { color: #fff; font-size: 2rem; font-weight: bold; margin-bottom: 1rem; }
+        .footer-info p { font-size: 1.1rem; color: #e2eafc; margin-bottom: 1.5rem; }
+        .footer-social { display: flex; gap: 1.5rem; margin-bottom: 1.5rem; }
+        .footer-social a { color: #fff; font-size: 1.8rem; transition: color 0.2s; }
+        .footer-social a:hover { color: #d24b67; }
+        .footer-img { flex: 1 1 220px; display: flex; align-items: center; justify-content: center; }
+        .footer-img img { width: 180px; max-width: 100%; border-radius: 18px; box-shadow: 0 8px 32px rgba(76, 51, 255, 0.13); }
+        .footer-copyright { text-align: center; font-size: 1rem; color: #b0c4de; margin-top: 2rem; letter-spacing: 1px; }
+        @media (max-width: 900px) { .dashboard-content { flex-direction: column; } }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-content">
+            <div class="navbar-logo">AI Care</div>
+            <div class="navbar-links">
+                <a href="new.html" class="active">Home</a>
+                <a href="dashboard.html">Mood Dashboard</a>
+                <a href="http://127.0.0.1:5000">Start chat</a>
+            </div>
+        </div>
+    </nav>
+    <div class="glass-container">
+        <header class="dashboard-header">
+            <h1 class="dashboard-title">Mood Tracking Dashboard</h1>
+            <a href="new.html" class="nav-link">Back to Home</a>
+        </header>
+        <div class="dashboard-content">
+            <div class="chart-container">
+                <h2>Emotion Distribution</h2>
+                <canvas id="emotionChart" width="400" height="400"></canvas>
+            </div>
+            <div class="stats-container">
+                <div class="stat-card" onclick="focusEmotion('joy')">
+                    <div class="stat-title">Most Frequent Mood</div>
+                    <div class="stat-value" id="topMood">Joy</div>
+                </div>
+                <div class="stat-card" onclick="focusEmotion('joy')">
+                    <div class="stat-title">Positive Mood</div>
+                    <div class="stat-value">Joy</div>
+                </div>
+                <div class="stat-card" onclick="focusEmotion('sadness')">
+                    <div class="stat-title">Negative Mood</div>
+                    <div class="stat-value">Sadness</div>
+                </div>
+            </div>
+        </div>
+        <div class="emotion-cards">
+            <div class="emotion-card tooltip" onclick="focusEmotion('anger')">
+                <div class="emotion-icon">😠</div>
+                <div class="emotion-name">Anger</div>
+                <div class="emotion-count" id="angerCount">0</div>
+                <span class="tooltiptext">Click to highlight in chart</span>
+            </div>
+            <div class="emotion-card tooltip" onclick="focusEmotion('fear')">
+                <div class="emotion-icon">😨</div>
+                <div class="emotion-name">Fear</div>
+                <div class="emotion-count" id="fearCount">0</div>
+                <span class="tooltiptext">Click to highlight in chart</span>
+            </div>
+            <div class="emotion-card tooltip" onclick="focusEmotion('joy')">
+                <div class="emotion-icon">😊</div>
+                <div class="emotion-name">Joy</div>
+                <div class="emotion-count" id="joyCount">0</div>
+                <span class="tooltiptext">Click to highlight in chart</span>
+            </div>
+            <div class="emotion-card tooltip" onclick="focusEmotion('love')">
+                <div class="emotion-icon">❤️</div>
+                <div class="emotion-name">Love</div>
+                <div class="emotion-count" id="loveCount">0</div>
+                <span class="tooltiptext">Click to highlight in chart</span>
+            </div>
+            <div class="emotion-card tooltip" onclick="focusEmotion('sadness')">
+                <div class="emotion-icon">😢</div>
+                <div class="emotion-name">Sadness</div>
+                <div class="emotion-count" id="sadnessCount">0</div>
+                <span class="tooltiptext">Click to highlight in chart</span>
+            </div>
+            <div class="emotion-card tooltip" onclick="focusEmotion('surprise')">
+                <div class="emotion-icon">😲</div>
+                <div class="emotion-name">Surprise</div>
+                <div class="emotion-count" id="surpriseCount">0</div>
+                <span class="tooltiptext">Click to highlight in chart</span>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3>AI Care</h3>
+                <p>
+                    AI Care is your trusted companion for mental wellness. Our platform offers AI-powered chat support, mood tracking, and personalized dashboards to help you manage stress, track your emotions, and grow every day. Your privacy and well-being are our top priorities.
+                </p>
+                <div class="footer-social">
+                    <a href="mailto:support@aicare.com" title="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-img">
+                <img src="https://cdn.pixabay.com/photo/2017/01/31/13/14/brain-2029366_1280.png" alt="Mental Wellness AI">
+            </div>
+        </div>
+        <div class="footer-copyright">
+            &copy; 2025 AI Care – Your Mental Wellness Companion. All rights reserved.
+        </div>
+    </footer>
+    <script>
+        // Fetch emotion data from server (replace with your actual API call)
+        async function fetchEmotionData() {
+            try {
+                const response = await fetch('/api/emotion-counts'); // <-- Change to your API endpoint
+                const data = await response.json();
+                updateEmotionUI(data);
+            } catch (error) {
+                console.error('Error fetching emotion data:', error);
+                // Mock data for demo
+                const mockData = {
+                    anger: 0,
+                    fear: 0,
+                    joy: 0,
+                    love: 0,
+                    sadness: 0,
+                    surprise: 0
+                };
+                updateEmotionUI(mockData);
+            }
+        }
+
+        function updateEmotionUI(data) {
+            document.getElementById('angerCount').textContent = data.anger || 0;
+            document.getElementById('fearCount').textContent = data.fear || 0;
+            document.getElementById('joyCount').textContent = data.joy || 0;
+            document.getElementById('loveCount').textContent = data.love || 0;
+            document.getElementById('sadnessCount').textContent = data.sadness || 0;
+            document.getElementById('surpriseCount').textContent = data.surprise || 0;
+
+            // Set top mood
+            let maxEmotion = Object.keys(data).reduce((a, b) => data[a] > data[b] ? a : b);
+            document.getElementById('topMood').textContent = maxEmotion.charAt(0).toUpperCase() + maxEmotion.slice(1);
+
+            // Update chart
+            updateChart(data);
+        }
+
+        let emotionChart;
+        function updateChart(data) {
+            const ctx = document.getElementById('emotionChart').getContext('2d');
+            if (emotionChart) emotionChart.destroy();
+            emotionChart = new Chart(ctx, {
+                type: 'pie',
+                data: {
+                    labels: Object.keys(data),
+                    datasets: [{
+                        data: Object.values(data),
+                        backgroundColor: [
+                            '#ff5252', // anger
+                            '#9c27b0', // fear
+                            '#ffeb3b', // joy
+                            '#e91e63', // love
+                            '#2196f3', // sadness
+                            '#009688'  // surprise
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            position: 'right',
+                            labels: { color: '#fff', font: { size: 14 } }
+                        }
+                    }
+                }
+            });
+        }
+
+        function focusEmotion(emotion) {
+            // Reset all cards
+            document.querySelectorAll('.emotion-card').forEach(card => {
+                card.style.background = 'rgba(255, 255, 255, 0.1)';
+            });
+            // Highlight the selected card
+            document.querySelectorAll('.emotion-card').forEach(card => {
+                if (card.querySelector('.emotion-name').textContent.toLowerCase() === emotion) {
+                    card.style.background = emotion === 'anger' ? '#ff5252' :
+                                          emotion === 'fear' ? '#9c27b0' :
+                                          emotion === 'joy' ? '#ffeb3b' :
+                                          emotion === 'love' ? '#e91e63' :
+                                          emotion === 'sadness' ? '#2196f3' :
+                                          '#009688';
+                }
+            });
+            console.log('Selected emotion:', emotion);
+        }
+
+        // Initialize the chart and fetch data
+        window.onload = function() {
+            fetchEmotionData();
+        };
+    </script>
+</body>
+</html>
