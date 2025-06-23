@@ -43,3 +43,6 @@ Backend	Node.js
 Database	MongoDB
 <br>
 Chatbot	Custom trained logic-based bot
+
+# Images
+you can view the webiste's screenshots in the images folder
